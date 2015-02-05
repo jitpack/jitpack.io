@@ -4,17 +4,19 @@ JitPack currently can build Gradle and Maven projects. Support for other build f
 
 ## Gradle projects
 
-Projects using Gradle need to have either the `maven` or `maven-publishing` plugin enabled. For example:
+Projects using Gradle need to have either the [maven](http://gradle.org/docs/current/userguide/maven_plugin.html) or [maven-publishing](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this line to your build file:
 
 ```groovy
     apply plugin: 'maven'
 ```
 
-and JitPack will run:
+then JitPack will run:
 
 ```
     gradle install
 ```
+
+to install the jar and pom file in it's local maven repository. With maven-publishing plugin it will run `gradle publishToMavenLocal`.
 
 ### Example projects
 
@@ -53,3 +55,8 @@ or in Maven:
 	<version>Version</version> 
 </dependency>
 ``` 
+
+# Java version
+
+JitPack will compile projects using Java 8. See the example projects on how to set a different target version.
+
