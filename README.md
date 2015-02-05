@@ -28,6 +28,8 @@ To get a GitHub project into your build:
   
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
+See the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details.
+
 If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the version they have in their pom.
 
 
