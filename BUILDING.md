@@ -2,6 +2,9 @@
 
 JitPack currently can build Gradle and Maven projects. Support for other build frameworks is coming later on.
 
+If the project has a pom.xml file then it will be built using Maven otherwise JitPack will look for a build.gradle file.
+
+
 ## Gradle projects
 
 Projects using Gradle need to have either the [maven](http://gradle.org/docs/current/userguide/maven_plugin.html) or [maven-publishing](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this line to your build file:
@@ -16,7 +19,7 @@ then JitPack will run:
     gradle install
 ```
 
-to install the jar and pom file in it's local maven repository. With maven-publishing plugin it will run `gradle publishToMavenLocal`.
+to install the jar and pom file in it's local maven repository. With maven-publishing plugin it will run `gradle publishToMavenLocal`. If your projects uses the gradle wrapper JitPack will run ./gradlew.
 
 ### Example projects
 
@@ -28,7 +31,7 @@ to install the jar and pom file in it's local maven repository. With maven-publi
 
 JitPack will run: 
 
-    mvn install
+    mvn install 
     
 to build and publish Maven projects. 
 
