@@ -35,7 +35,7 @@ to build and publish Maven projects.
 ### Example projects
 
  - Simple - https://github.com/jitpack/maven-simple
- - Multiple modules - https://github.com/jitpack/maven-mudular
+ - Multiple modules - https://github.com/jitpack/maven-modular
   
 # Multi-module projects
 
