@@ -1,8 +1,8 @@
+# Guide to building projects
 
 JitPack currently can build Gradle and Maven projects. Support for other build frameworks is coming later on.
 
-Gradle projects
-=============
+## Gradle projects
 
 Projects using Gradle need to have either the `maven` or `maven-publishing` plugin enabled. For example:
 
@@ -16,14 +16,13 @@ and JitPack will run:
     gradle install
 ```
 
-## Example projects
+### Example projects
 
  - Simple - https://github.com/jitpack/gradle-simple
  - Multiple modules - https://github.com/jitpack/gradle-modular
  - Project with multiple artifacts - https://github.com/jitpack/gradle-multiple-jars
 
-Maven projects
-=============
+## Maven projects
 
 JitPack will run: 
 
@@ -31,13 +30,12 @@ JitPack will run:
     
 to build and publish Maven projects. 
 
-## Example projects
+### Example projects
 
  - Simple - https://github.com/jitpack/maven-simple
  - Multiple modules - https://github.com/jitpack/maven-mudular
   
-Multi-module projects
-=====================
+# Multi-module projects
 
 To get individual artifacts of multi-module builds use `Repo.ModuleName` as the artifact Id.
 
