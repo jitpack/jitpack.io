@@ -16,7 +16,9 @@ To get a GitHub project into your build:
 
 **Step 1.** Add the JitPack maven repository to your build file
 
+```groovy
     url "https://jitpack.io"
+```
 
 **Step 2.**  Add the dependency in the form:
 
