@@ -63,3 +63,12 @@ or in Maven:
 
 JitPack will compile projects using Java 8. See the example projects on how to set a different target version.
 
+# Troubleshooting
+
+If there is an issue with a build you will see a link to the log in the Status column. You can also inspect the build log for any other build using the URL:
+
+```
+https://jitpack.io/com/github/:User/:Repo/:Version/build.log
+```
+
+Although we monitor all the builds feel free to get in touch any time you face an issue. 
