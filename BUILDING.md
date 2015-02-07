@@ -71,7 +71,7 @@ If there is an issue with a build you will see a link to the log in the Status c
 https://jitpack.io/com/github/User/Repo/Tag/build.log
 ```
 
-and it sometimes help to look at the pom file itself:
+and it sometimes helps to look at the pom file itself:
 
 ```
 curl https://jitpack.io/com/github/User/Repo/Tag/Repo-Tag.pom
