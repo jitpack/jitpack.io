@@ -47,7 +47,7 @@ To get individual artifacts of multi-module builds use `Repo.ModuleName` as the 
 In Gradle:
 
 ```groovy
-compile 'com.github.User:Repo.Module:Version'
+compile 'com.github.User:Repo.Module:Tag'
 ```
 or in Maven:
 
@@ -55,7 +55,7 @@ or in Maven:
 <dependency> 
 	<groupId>com.github.User</groupId> 
 	<artifactId>Repo.Module</artifactId> 
-	<version>Version</version> 
+	<version>Tag</version> 
 </dependency>
 ``` 
 
@@ -68,7 +68,13 @@ JitPack will compile projects using Java 8. See the example projects on how to s
 If there is an issue with a build you will see a link to the log in the Status column. You can also inspect the build log for any other build using the URL:
 
 ```
-https://jitpack.io/com/github/:User/:Repo/:Version/build.log
+https://jitpack.io/com/github/User/Repo/Tag/build.log
+```
+
+and it sometimes help to look at the pom file itself:
+
+```
+curl https://jitpack.io/com/github/User/Repo/Tag/Repo-Tag.pom
 ```
 
 Although we monitor all the builds feel free to get in touch any time you face an issue. 
