@@ -27,6 +27,10 @@ to install the jar and pom file in it's local maven repository. With maven-publi
  - Multiple modules - https://github.com/jitpack/gradle-modular
  - Project with multiple artifacts - https://github.com/jitpack/gradle-multiple-jars
 
+## Android projects
+
+See the [Guide to building Android projects](https://github.com/jitpack/jitpack.io/blob/master/ANDROID.md)
+
 ## Maven projects
 
 JitPack will run: 
