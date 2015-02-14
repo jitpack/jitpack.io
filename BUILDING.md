@@ -1,6 +1,6 @@
 # Guide to building projects
 
-JitPack currently can build Gradle, Maven and Sbt projects. Support for other build frameworks is coming later on.
+JitPack currently can build **Gradle**, **Maven** and **Sbt** projects. Support for other build frameworks is coming later on.
 
 If the project has a pom.xml file then it will be built using Maven otherwise JitPack will look for a build.gradle  or a build.sbt file.
 
@@ -65,7 +65,10 @@ or in Maven:
 
 ## Sbt projects
 
-JitPack can build sbt projects and also provide dependencies to sbt.
+JitPack can build sbt projects and also provide dependencies to sbt. 
+When building an Sbt project JitPack will run:
+
+    sbt publishM2
 
 To use JitPack repository from sbt add this to build.sbt:
 ```sbt
@@ -78,7 +81,7 @@ libraryDependencies += "com.github.User" % "Repo" % "Tag"
 
 # Java version
 
-JitPack will compile projects using Java 8. See the example projects on how to set a different target version.
+JitPack will compile projects using Oracle Java 8. See the example projects on how to set a different target version.
 
 # Troubleshooting
 
