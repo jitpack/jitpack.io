@@ -24,13 +24,13 @@ To get a GitHub project into your build:
 
  - *Group:* com.github.Username
  - *Artifact:* Repository Name
- - *Version:* Release tag
+ - *Version:* Release tag or commit id
   
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
 See the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details and instructions on building multi-module projects.
 
-If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the version they have in their pom.
+If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the short commit id as the version.
 
 
 Why
