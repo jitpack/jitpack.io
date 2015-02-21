@@ -24,11 +24,11 @@ That's it. If install works and you have added a GitHub release it should work j
 Users of your library will need add the jitpack.io repository:
 
 ```gradle
-    repositories {
-        maven {
-            url "https://jitpack.io"
-        }
-    }
+repositories {
+ maven {
+  url "https://jitpack.io"
+ }
+}
 ```
 
 and: specify the 'aar' type:
