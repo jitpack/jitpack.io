@@ -46,11 +46,13 @@ to build and publish Maven projects.
   
 # Multi-module projects
 
+If the project builds multiple modules JitPack will prefix each module with the repository name. It will also generate a module that includes all other modules as dependencies and will return it by default.
+
 To get individual artifacts of multi-module builds use `Repo.ModuleName` as the artifact Id.
 
 In Gradle:
 
-```groovy
+```gradle
 compile 'com.github.User:Repo.Module:Tag'
 ```
 or in Maven:
@@ -62,6 +64,10 @@ or in Maven:
 	<version>Tag</version> 
 </dependency>
 ``` 
+
+Examples:
+ - Multiple Gradle modules - https://github.com/jitpack/gradle-modular
+ - Multiple Maven modules - https://github.com/jitpack/maven-modular
 
 ## Sbt projects
 
