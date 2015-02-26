@@ -2,20 +2,19 @@
 
 JitPack currently can build **Gradle**, **Maven** and **Sbt** projects. Support for other build frameworks is coming later on.
 
-If the project has a pom.xml file then it will be built using Maven otherwise JitPack will look for a build.gradle  or a build.sbt file.
-
+If the project has a build.gradle file then it will be built using Gradle otherwise JitPack will look for a pom.xml or a build.sbt file. The build.gradle file can also be located in a subfolder.
 
 ## Gradle projects
 
 Projects using Gradle need to have either the [maven](http://gradle.org/docs/current/userguide/maven_plugin.html) or [maven-publishing](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this line to your build file:
 
-```groovy
+```gradle
     apply plugin: 'maven'
 ```
 
 then JitPack will run:
 
-```
+```gradle
     gradle install
 ```
 
@@ -29,7 +28,7 @@ to install the jar and pom file in it's local maven repository. With maven-publi
 
 ## Android projects
 
-See the [Guide to building Android projects](https://github.com/jitpack/jitpack.io/blob/master/ANDROID.md)
+See the [Guide to building Android projects](https://github.com/jitpack/jitpack.io/blob/master/ANDROID.md) with Gradle
 
 ## Maven projects
 
