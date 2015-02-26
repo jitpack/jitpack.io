@@ -32,8 +32,38 @@ See the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BU
 
 If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the short commit id as the version.
 
+Releasing on JitPack
+======
 
-Why
+Releasing your library on JitPack is extremely simple. All you need to do is add a [GitHub Release](https://github.com/blog/1547-release-your-software) and you are done. As long as three's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
+
+Some other things to consider:
+
+1. Add dependency information. Tell the world where to get your library: 
+ 
+   ```gradle
+   repositories { 
+        maven { url "https://jitpack.io" }
+   }
+   dependencies {
+         compile 'com.github.jitpack:gradle-simple:1.0'
+   }
+   ```  
+It's easy to look up the dependency information on https://jitpack.io. Just paste your GitHub url and press Look Up
+   
+2. Add sources jar. Creating the sources jar makes it easier for others to use your code and contribute.
+3. Add a badge. You can add a version badge to your readme.md, for example:
+
+[![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
+
+```
+[![Release](https://img.shields.io/github/tag/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
+```
+
+
+
+
+Motivation
 ======
 
 There are a lot of great libraries on GitHub but unfortunately many of them are not published on any public repositories. You could always check out the code, build and deploy locally:
