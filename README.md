@@ -57,7 +57,7 @@ It's easy to look up the dependency information on https://jitpack.io. Just past
 [![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
 
 ```
-[![Release](https://img.shields.io/github/tag/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
+[![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
 ```
 
 
