@@ -31,10 +31,15 @@ repositories {
 }
 ```
 
-and: specify the 'aar' type:
+and:
 
 ```gradle
 dependencies {
-    compile 'com.github.jitpack:android-example:1.0.1@aar'
+    compile 'com.github.jitpack:android-example:1.0.1'
 }
 ```
+
+## Other notes
+
+- Android NDK builds are not yet supported on JitPack
+
