@@ -35,11 +35,16 @@ If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-r
 Releasing on JitPack
 ======
 
-Releasing your library on JitPack is extremely simple. All you need to do is add a [GitHub Release](https://github.com/blog/1547-release-your-software) and you are done. As long as three's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
+Releasing your library on JitPack is extremely simple. 
 
-Some other things to consider:
+**Step 1**: Create a [GitHub Release](https://github.com/blog/1547-release-your-software)  
+**That's it**
 
-1. Add dependency information. Tell the world where to get your library: 
+As long as three's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
+
+Some extra things to consider:
+
+- Add dependency information. Tell the world where to get your library: 
  
    ```gradle
    repositories { 
@@ -51,8 +56,8 @@ Some other things to consider:
    ```  
 It's easy to look up the dependency information on https://jitpack.io. Just paste your GitHub url and press Look Up
    
-2. Add sources jar. Creating the sources jar makes it easier for others to use your code and contribute.
-3. Add a badge. You can add a version badge to your readme.md, for example:
+- Add sources jar. Creating the sources jar makes it easier for others to use your code and contribute.
+- Add a badge. You can add a version badge to your readme.md, for example:
 
 [![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
 
@@ -60,7 +65,7 @@ It's easy to look up the dependency information on https://jitpack.io. Just past
 [![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
 ```
 
-
+- Show up-to-date version in HTML. If your project has a website you can get and display the latest release using JavaScript and GitHub API: https://gist.github.com/jitpack-io/5bd698d35303b2c370a0
 
 
 Motivation
