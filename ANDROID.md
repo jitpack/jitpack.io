@@ -1,6 +1,7 @@
 # Android library builds
 
 Android SDK is available in the build environment and ANDROID_HOME variable is already set when the build starts.
+Builds are run with Java 7 by default.
 
 ## Gradle
 
@@ -39,7 +40,18 @@ dependencies {
 }
 ```
 
+## Adding a sample app 
+
+If you add a sample app to the same repo then your app needs to depend on the library. To do this in your app/build.gradle add a dependency in the form:
+
+```gradle
+dependencies {
+    compile project(':library')
+}
+```
+
+where 'library' is the name of the gradle module.
+
 ## Other notes
 
 - Android NDK builds are not yet supported on JitPack
-
