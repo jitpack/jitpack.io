@@ -54,5 +54,5 @@ where 'library' is the name of the gradle module.
 
 ## Other notes
 
-- By default the android-maven plugin generate a 'aar' file from your library. If you want to have a jar instead have a look at the example project.
+- By default the android-maven plugin generates an 'aar' file from your library. If you want to have a 'jar' instead take a look at the example project's library/build.gradle.
 - Android NDK builds are not yet supported on JitPack
