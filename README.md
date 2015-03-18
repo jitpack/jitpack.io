@@ -67,6 +67,11 @@ It's easy to look up the dependency information on https://jitpack.io. Just past
 
 - Show up-to-date version in HTML. If your project has a website you can get and display the latest release using JavaScript and GitHub API: https://gist.github.com/jitpack-io/5bd698d35303b2c370a0
 
+Other Features
+======
+- Javadoc publishing. If the project produces a javadoc.jar then you can browse the javadoc files directly at: 
+    - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/`   
+- Finds build files in sub-folders if there is no build file at the root of the repository
 
 Motivation
 ======
