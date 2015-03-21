@@ -10,11 +10,12 @@ To enable installing into local maven repository and JitPack you need to add the
  1. Add `classpath 'com.github.dcendents:android-maven-plugin:1.2'` to root build.gradle under `buildscripts`
  2. Add `apply plugin: 'android-maven'` to the library/build.gradle
 
-After these changes you should be able to run:
+After these changes go to the root of your project and run:
 
     gradle install
     
-That's it. If install works and you have added a GitHub release it should work jitpack.io
+It will install your library in your local maven repository ($HOME/.m2/repository).
+If install works and you have added a GitHub release it should work jitpack.io
 
 ## Examples
 
