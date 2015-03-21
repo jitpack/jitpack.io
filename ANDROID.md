@@ -5,7 +5,7 @@ Builds are run with Java 7 by default.
 
 ## Gradle
 
-To enable installing into local maven repository and JitPack you need to add the 'android-maven' plugin:
+To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-plugin) plugin:
 
  1. Add `classpath 'com.github.dcendents:android-maven-plugin:1.2'` to root build.gradle under `buildscripts`
  2. Add `apply plugin: 'android-maven'` to the library/build.gradle
