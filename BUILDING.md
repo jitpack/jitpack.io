@@ -45,24 +45,29 @@ to build and publish Maven projects.
   
 # Multi-module projects
 
-If the project builds multiple modules JitPack will prefix each module with the repository name. It will also generate a module that includes all other modules as dependencies and will return it by default.
+If the project builds multiple modules JitPack will append the repository name to the artifact's groupId and the module's name will stay in the artifactId. It will also generate a module that includes all of repository's modules as dependencies. That way if you don't know which module you want you can get all of them by adding just a single dependency to your build file.
 
-To get individual artifacts of multi-module builds use `Repo.ModuleName` as the artifact Id.
+To get individual artifacts of multi-module builds use `com.github.User.Repo` as group Id and `ModuleName` as the artifact Id.
 
-In Gradle:
+Individual module in Gradle:
 
 ```gradle
-compile 'com.github.User:Repo.Module:Tag'
+compile 'com.github.User.Repo:Module:Tag'
 ```
 or in Maven:
 
 ```xml
 <dependency> 
-	<groupId>com.github.User</groupId> 
-	<artifactId>Repo.Module</artifactId> 
+	<groupId>com.github.User.Repo</groupId> 
+	<artifactId>Module</artifactId> 
 	<version>Tag</version> 
 </dependency>
 ``` 
+
+To get all modules of a project use the standard syntax:
+```gradle
+compile 'com.github.User:Repo:Tag'
+```
 
 Examples:
  - Multiple Gradle modules - https://github.com/jitpack/gradle-modular
