@@ -34,7 +34,7 @@ See the [Guide to building Android projects](https://github.com/jitpack/jitpack.
 
 JitPack will run: 
 
-    mvn install 
+    mvn install -DskipTests
     
 to build and publish Maven projects. 
 
