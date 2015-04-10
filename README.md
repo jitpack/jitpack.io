@@ -1,4 +1,4 @@
-# jitpack.io
+# JitPack.io
 
 This is a repository for documentation and issues of https://jitpack.io service
 
