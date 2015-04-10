@@ -44,7 +44,7 @@ As long as three's a build file in your repository and it can install your libra
 
 Some extra things to consider:
 
-- Add dependency information. Tell the world where to get your library: 
+- Add dependency information in your README. Tell the world where to get your library: 
  
    ```gradle
    repositories { 
@@ -65,7 +65,7 @@ It's easy to look up the dependency information on https://jitpack.io. Just past
 [![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
 ```
 
-- Show up-to-date version in HTML. If your project has a website you can get and display the latest release using JavaScript and GitHub API: https://gist.github.com/jitpack-io/5bd698d35303b2c370a0
+- Show up-to-date version in HTML. If your project has a website or GitHub pages then you can display the latest release using JavaScript: https://gist.github.com/jitpack-io/5bd698d35303b2c370a0
 
 Other Features
 ======
@@ -84,5 +84,7 @@ but wouldn't it be great if the library was already built and available to use? 
 
 With JitPack all the author needs to do is create a [GitHub Release](https://github.com/blog/1547-release-your-software) and the project becomes available for everyone to use. So sharing releases is simpler for authors as well.
 
+Other
+======
 
-
+See the [FAQ page](FAQ.md)
