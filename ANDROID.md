@@ -51,7 +51,7 @@ dependencies {
 }
 ```
 
-where 'library' is the name of the gradle module.
+where 'library' is the name of your library module.
 
 ## Other notes
 
