@@ -16,7 +16,7 @@ To get a GitHub project into your build:
 
 **Step 1.** Add the JitPack maven repository to your build file
 
-```groovy
+```gradle
     url "https://jitpack.io"
 ```
 
@@ -28,7 +28,9 @@ To get a GitHub project into your build:
   
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
-See the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details and instructions on building multi-module projects.
+Too see an example head to https://jitpack.io and 'Look Up' a GitHub repository by url.
+
+See also the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details and instructions on building multi-module projects.
 
 If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the short commit id as the version.
 
