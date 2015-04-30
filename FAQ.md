@@ -12,7 +12,7 @@ In case you need to redo a release the best option is to create a new version on
 
 **Will my builds be reproducible?**
 
-Absolutely. Once JitPack builds a project it keeps the build artifacts (jar, aar, ... files) and continues to serve those.
+Absolutely. Once JitPack builds a project it keeps the build artifacts (jar, aar, ... files) and continues to serve those for all subsequent builds.
 
 **Is this like depending on source code repositories in other languages?**
 
