@@ -30,3 +30,6 @@ Not at the moment.
 
 15 minutes
 
+**Other questions**
+
+Send them to jitpack at jitpack.io
