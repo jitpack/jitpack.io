@@ -104,7 +104,7 @@ https://jitpack.io/com/github/User/Repo/Tag/build.log
 and it sometimes helps to look at the pom file itself:
 
 ```
-curl https://jitpack.io/com/github/User/Repo/Tag/Repo-Tag.pom
+curl -v https://jitpack.io/com/github/User/Repo/Tag/Repo-Tag.pom
 ```
 
 Although we monitor all the builds feel free to get in touch any time you face an issue. 
