@@ -20,7 +20,7 @@ To get a GitHub project into your build:
     url "https://jitpack.io"
 ```
 
-**Step 2.**  Add the dependency in the form:
+**Step 2.**  Add the dependency information:
 
  - *Group:* com.github.Username
  - *Artifact:* Repository Name
@@ -43,6 +43,7 @@ Releasing your library on JitPack is extremely simple.
 **That's it**
 
 As long as three's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
+
 
 Some extra things to consider:
 
