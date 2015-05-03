@@ -44,8 +44,9 @@ Releasing your library on JitPack is extremely simple.
 
 As long as three's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
 
+*Tip:* You can automate releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
 
-Some extra things to consider:
+### Some extra things to consider:
 
 - Add dependency information in your README. Tell the world where to get your library: 
  
