@@ -41,6 +41,8 @@ dependencies {
 }
 ```
 
+Note: do not add the jitpack.io repository under `buildscripts` 
+
 ## Adding a sample app 
 
 If you add a sample app to the same repo then your app needs to depend on the library. To do this in your app/build.gradle add a dependency in the form:
