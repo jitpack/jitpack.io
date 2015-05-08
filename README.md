@@ -26,6 +26,8 @@ To get a GitHub project into your build:
  - *Artifact:* Repository Name
  - *Version:* Release tag or commit id
   
+In Gradle that would be: `compile 'com.github.User:Repo:Tag'` 
+  
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
 Too see an example head to https://jitpack.io and 'Look Up' a GitHub repository by url.
@@ -42,7 +44,7 @@ Releasing your library on JitPack is extremely simple.
 **Step 1**: Create a [GitHub Release](https://github.com/blog/1547-release-your-software)  
 **That's it**
 
-As long as three's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
+As long as there's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
 
 *Tip:* You can automate releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
 
