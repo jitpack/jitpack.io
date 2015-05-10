@@ -12,7 +12,9 @@ In case you need to redo a release the best option is to create a new version on
 
 **Will my builds be reproducible?**
 
-Absolutely. Once JitPack builds a project it keeps the build artifacts (jar, aar, ... files) and continues to serve those for all subsequent builds.
+Absolutely. Once JitPack builds a project it keeps the build artifacts (jar, aar, ... files) and continues to serve those for all subsequent requests.
+
+JitPack encourages reproducible builds in general since you need to have a working build file in order to publish artifacts. See also [Reproducible Build](http://martinfowler.com/bliki/ReproducibleBuild.html) article by Martin Fowler.
 
 **Is this like depending on source code repositories in other languages?**
 
@@ -26,9 +28,9 @@ Each project is built in its own Docker container and has no access to other bui
 
 Not at the moment. 
 
-**How long is a build timeout?**
+**How long can builds take?**
 
-15 minutes
+Up to 15 minutes
 
 **Other questions**
 
