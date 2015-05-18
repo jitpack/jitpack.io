@@ -15,10 +15,10 @@ Projects using Gradle need to have either the [maven](http://gradle.org/docs/cur
 then JitPack will run:
 
 ```gradle
-    gradle install
+    ./gradlew install
 ```
 
-to install the jar and pom file in it's local maven repository. With maven-publishing plugin it will run `gradle publishToMavenLocal`. If your projects uses the gradle wrapper JitPack will run ./gradlew.
+to install the jar and pom file in it's local maven repository. With maven-publishing plugin it will run `./gradlew build publishToMavenLocal`. 
 
 ### Example projects
 
