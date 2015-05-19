@@ -34,7 +34,7 @@ Too see an example head to https://jitpack.io and 'Look Up' a GitHub repository 
 
 See also the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details and instructions on building multi-module projects.
 
-If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the short commit id as the version.
+If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the short commit id as the version. You can also place tags on other branches and then build using those tags.
 
 Releasing on JitPack
 ======
