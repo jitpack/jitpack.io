@@ -36,10 +36,17 @@ See also the [Guide to building](https://github.com/jitpack/jitpack.io/blob/mast
 
 If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the short commit id as the version. You can also place tags on other branches and then build using those tags.
 
+## BitBucket
+
+Using BitBucket is similar to using GitHub repositories. The only difference is:
+ - *Group:* org.bitbucket.Username
+
+Too see an example head to https://jitpack.io and 'Look Up' a BitBucket repository by url.
+
 Releasing on JitPack
 ======
 
-Releasing your library on JitPack is extremely simple. 
+Releasing your library on JitPack is very simple. 
 
 **Step 1**: Create a [GitHub Release](https://github.com/blog/1547-release-your-software)  
 **That's it**
