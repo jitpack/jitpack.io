@@ -110,6 +110,10 @@ curl -v https://jitpack.io/com/github/User/Repo/Tag/Repo-Tag.pom
 Although we monitor all the builds feel free to get in touch any time you face an issue. 
 The easiest way is to open a GitHub issues or come chat on https://gitter.im/jitpack-io
 
+## Rebuilding
+
+You can remove builds that didn't succeed if you Sign In on the website and look up your repository.
+
 ## Clean gradle cache
 
 To clean the Gradle cache delete the HOME_DIR/.gradle/caches directory.
