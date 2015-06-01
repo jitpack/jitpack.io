@@ -50,8 +50,7 @@ Releasing on JitPack
 
 Releasing your library on JitPack is very simple. 
 
-**Step 1**: Create a [GitHub Release](https://github.com/blog/1547-release-your-software)  
-**That's it**
+- Create a [GitHub Release](https://github.com/blog/1547-release-your-software)  
 
 As long as there's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
 
