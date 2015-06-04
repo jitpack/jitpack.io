@@ -24,6 +24,10 @@ Not really. With JitPack you specify which exact version you want and JitPack bu
 
 Each project is built in its own Docker container and has no access to other builds or files produced by other builds. Containers run only with normal user privileges (no root). All files produced by the build are served over HTTPS (only). 
 
+**Can I rebuilt my project?**
+
+If your first build wasn't successfull you can try rebuilding it. If you Sign In on JitPack.io then you'll be able to remove the old build and re-requesting it will trigger a new build. 
+
 **Can version ranges be used with JitPack?**
 
 Not at the moment. 
