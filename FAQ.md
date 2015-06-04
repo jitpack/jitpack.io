@@ -26,11 +26,12 @@ Each project is built in its own Docker container and has no access to other bui
 
 **Can I rebuilt my project?**
 
-If your first build wasn't successfull you can try rebuilding it. If you Sign In on JitPack.io then you'll be able to remove the old build and re-requesting it will trigger a new build. 
+If your first build wasn't successfull you can rebuild it. If you Sign In on JitPack.io then you'll be able to remove the old build and re-requesting it will trigger a new build. 
 
 **Can version ranges be used with JitPack?**
 
-Not at the moment. 
+You can use version ranges and Gradle's dynamic versions for releases. Currenly they only resolve to releases that have been built.
+`compile 'com.github.User:Repo:1.+'`
 
 **How long can builds take?**
 
