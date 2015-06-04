@@ -91,7 +91,17 @@ libraryDependencies += "com.github.User" % "Repo" % "Tag"
 
 # Java version
 
-JitPack will compile projects using Oracle Java 8. See the example projects on how to set a different target version.
+JitPack will compile projects using Oracle Java 8. See the example projects on how to set a different target version in your build file. 
+
+Android projects are build with Oracle Java 7 by default. Maven projects that specify a target version in their pom will be built with that target version.
+
+If your project uses Travis or Circle CI then JitPack will read the lowest jdk version from yml file and use that to build.
+
+Alternatively create a `.jitpack.yml` file in the root of your repository and specify a jdk version:
+```yml
+jdk:
+  - oraclejdk8
+```
 
 # Troubleshooting
 
