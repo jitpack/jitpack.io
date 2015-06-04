@@ -1,14 +1,14 @@
 Frequently Asked Questions
 -
 
-**Can I use JitPack with private repositories?**
-
-Yes. See https://jitpack.io/private
-
 **What happens if a tag is deleted on GitHub?**
 
 If the project was already built JitPack will continue serving the existing artifacts. It will not rebuilt the project at the new tag. 
 In case you need to redo a release the best option is to create a new version on GitHub.
+
+**Can I use JitPack with private repositories?**
+
+Yes. See https://jitpack.io/private
 
 **Will my builds be reproducible?**
 
