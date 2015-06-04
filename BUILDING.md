@@ -122,7 +122,9 @@ The easiest way is to open a GitHub issues or come chat on https://gitter.im/jit
 
 ## Rebuilding
 
-You can remove builds that didn't succeed if you Sign In on the website and look up your repository.
+You can remove builds that didn't succeed if you *Sign In* on [JitPack.io](https://jitpack.io) and look up your repository. Requesting them again will result in the project being rebuilt.
+
+You may need to run gradle with `--refresh-dependencies` flag in order to re-fetch the dependency.
 
 ## Clean gradle cache
 
