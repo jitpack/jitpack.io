@@ -38,4 +38,4 @@ Up to 15 minutes
 
 **Other questions**
 
-Send them to jitpack at jitpack.io
+Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack
