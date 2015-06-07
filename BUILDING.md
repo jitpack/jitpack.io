@@ -1,8 +1,8 @@
 # Guide to building projects
 
-JitPack currently can build **Gradle**, **Maven** and **Sbt** projects. Support for other build frameworks is coming later on.
+JitPack currently can build **Gradle**, **Maven**, **Sbt** and **Leiningen** projects. Support for other build frameworks is coming later on.
 
-If the project has a build.gradle file then it will be built using Gradle otherwise JitPack will look for a pom.xml or a build.sbt file. The build.gradle file can also be located in a subfolder.
+If the project has a build.gradle file then it will be built using Gradle otherwise JitPack will look for a pom.xml, build.sbt or project.clj file. The build.gradle file can also be located in a subfolder.
 
 ## Gradle projects
 
@@ -87,6 +87,23 @@ resolvers += "jitpack" at "https://jitpack.io"
 and then use:
 ```sbt
 libraryDependencies += "com.github.User" % "Repo" % "Tag"
+```
+
+## Leiningen projects
+
+When building a Leiningen project JitPack will run:
+
+    lein do clean, install
+    
+To use JitPack from Leiningen add the repository to your project.clj:
+```clojure    
+:repositories [["jitpack" "https://jitpack.io"]]
+```
+
+and then the dependency:
+
+```clojure
+:dependencies [[com.github.User/Repo "Tag"]]
 ```
 
 # Java version
