@@ -6,10 +6,12 @@ If the project has a build.gradle file then it will be built using Gradle otherw
 
 ## Gradle projects
 
-Projects using Gradle need to have either the [maven](http://gradle.org/docs/current/userguide/maven_plugin.html) or [maven-publishing](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this line to your build file:
+Projects using Gradle need to have either the [maven](http://gradle.org/docs/current/userguide/maven_plugin.html) or [maven-publishing](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this to your build file:
 
 ```gradle
     apply plugin: 'maven'
+    
+    group = 'com.github.YourUsername'
 ```
 
 then JitPack will run:
