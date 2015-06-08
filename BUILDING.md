@@ -22,6 +22,8 @@ then JitPack will run:
 
 to install the jar and pom file in it's local maven repository. With maven-publishing plugin it will run `./gradlew build publishToMavenLocal`. 
 
+Note that if your project isn't using a Gradle wrapper JitPack will build it with Gradle 2.4.
+
 ### Example projects
 
  - Simple - https://github.com/jitpack/gradle-simple
