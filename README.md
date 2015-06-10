@@ -32,6 +32,8 @@ In Gradle that would be: `compile 'com.github.User:Repo:Tag'`
 
 Too see an example head to https://jitpack.io and 'Look Up' a GitHub repository by url.
 
+Note: when using multiple repositories in build.gradle it is recommended to add JitPack at the end.
+
 ## Building
 
 See also the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details and for instructions on building multi-module projects.
@@ -62,6 +64,7 @@ As long as there's a build file in your repository and it can install your libra
  
    ```gradle
    repositories { 
+        jcenter()
         maven { url "https://jitpack.io" }
    }
    dependencies {
