@@ -9,7 +9,12 @@ To enable installing into local maven repository and JitPack you need to add the
 
 If using Gradle 2.4:
  1. Add `classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'` to root build.gradle under `buildscript { dependencies {`
- 2. Add `apply plugin: 'com.github.dcendents.android-maven'` to the library/build.gradle
+ 2. Add the following lines to your library/build.gradle  
+ ```
+ apply plugin: 'com.github.dcendents.android-maven'  
+ 
+ group='com.github.YourUsername'
+ ```
 
 After these changes go to the root of your project and run:
 
