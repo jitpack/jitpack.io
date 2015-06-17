@@ -14,7 +14,7 @@ How to
 
 To get a GitHub project into your build:
 
-**Step 1.** Add the JitPack maven repository to your build file
+**Step 1.** Add the JitPack maven repository to the list of repositories:
 
 ```gradle
     url "https://jitpack.io"
@@ -26,13 +26,22 @@ To get a GitHub project into your build:
  - *Artifact:* Repository Name
  - *Version:* Release tag or commit id
   
-In Gradle that would be: `compile 'com.github.User:Repo:Tag'` 
-  
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
 Too see an example head to https://jitpack.io and 'Look Up' a GitHub repository by url.
 
-Note: when using multiple repositories in build.gradle it is recommended to add JitPack at the end.
+*Note*: when using multiple repositories in build.gradle it is recommended to add JitPack *at the end*. 
+
+Gradle example:
+   ```gradle
+   repositories { 
+        jcenter()
+        maven { url "https://jitpack.io" }
+   }
+   dependencies {
+        compile 'com.github.User:Repo:Tag'
+   }
+   ```
 
 ## Building
 
