@@ -7,7 +7,7 @@ Need help setting up a repo? Come to  [![Gitter](https://badges.gitter.im/Join%2
 About
 ======
 
-JitPack is an easy to use package repository for JVM projects. It builds GitHub projects on demand and provides you with ready-to-use artifacts (jar, aar). The core idea is that in order to publish your library you don't need to build and upload it yourself. Just push your changes and create a GitHub release. Done!
+JitPack is a novel package repository for JVM projects. It builds Git projects on demand and provides you with ready-to-use artifacts (jar, aar). The core idea is that in order to publish your library you don't need to build and upload it yourself. Just push your changes and create a GitHub release. Done!
 
 How to
 ======
