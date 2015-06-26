@@ -30,7 +30,7 @@ To get a GitHub project into your build:
 
 Too see an example head to https://jitpack.io and 'Look Up' a GitHub repository by url.
 
-*Note*: when using multiple repositories in build.gradle it is recommended to add JitPack *at the end*. 
+*Note*: when using multiple repositories in build.gradle it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
 
 Gradle example:
    ```gradle
