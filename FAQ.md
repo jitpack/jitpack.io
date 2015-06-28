@@ -10,6 +10,11 @@ In case you need to redo a release the best option is to create a new version on
 
 Yes. See https://jitpack.io/private
 
+**How can I get the latest snapshot of a repository?**
+
+In your build file set the version of your dependency to `-SNAPSHOT`. 
+You can also customize how often you want Gradle to check for new snapshots - see [the documentation](https://docs.gradle.org/1.8-rc-1/userguide/dependency_management.html#sec:controlling_caching). 
+
 **Will my builds be reproducible?**
 
 Absolutely. Once JitPack builds a project it keeps the build artifacts (jar, aar, ... files) and continues to serve those for all subsequent requests.
