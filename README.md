@@ -24,7 +24,7 @@ To get a GitHub project into your build:
 
  - *Group:* com.github.Username
  - *Artifact:* Repository Name
- - *Version:* Release tag or commit id
+ - *Version:* Release tag, commit hash or `-SNAPSHOT`
   
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
@@ -65,7 +65,9 @@ Releasing your library on JitPack is very simple.
 
 As long as there's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
 
-*Tip:* You can automate GitHub releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
+*Tip:* You can try out your code before a release by using the commit hash as the version.
+
+*Tip:* You can also automate GitHub releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
 
 ### Some extra things to consider:
 
