@@ -43,6 +43,14 @@ Gradle example:
    }
    ```
 
+### Snapshots
+
+Snapshot versions are useful during development and JitPack provides two ways to get them. You can specify a version for your dependency as:
+ - commit hash
+ - `-SNAPSHOT`
+
+`-SNAPSHOT` will build the latest commit in the git repository. It depends on your build tool how often it checks for new snapshot versions. For example, see the [Gradle documentation](https://docs.gradle.org/1.8-rc-1/userguide/dependency_management.html#sec:controlling_caching) on how to configure caching for *changing* dependencies.     
+
 ## Building
 
 See also the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details and for instructions on building multi-module projects.
