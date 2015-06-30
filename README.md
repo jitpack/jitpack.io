@@ -49,7 +49,7 @@ Snapshot versions are useful during development and JitPack provides two ways to
  - commit hash
  - `-SNAPSHOT`
 
-`-SNAPSHOT` will build the latest commit in the git repository. It depends on your build tool how often it checks for new snapshot versions. For example, see the [Gradle documentation](https://docs.gradle.org/1.8-rc-1/userguide/dependency_management.html#sec:controlling_caching) on how to configure caching for *changing* dependencies.     
+`-SNAPSHOT` will build the latest commit in the git repository. It depends on your build tool how often it checks for new snapshot versions. For example, see the [Gradle documentation](https://docs.gradle.org/1.8-rc-1/userguide/dependency_management.html#changing-module-cache-control) on how to configure caching for *changing* dependencies.     
 
 ## Building
 
