@@ -5,17 +5,25 @@ Builds are run with Java 7 by default.
 
 ## Gradle
 
-To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-plugin) plugin:
+To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin.
 
- 1. Add `classpath 'com.github.dcendents:android-maven-plugin:1.2'` to root build.gradle under `buildscripts`
- 2. Add `apply plugin: 'android-maven'` to the library/build.gradle
+If using Gradle 2.4:
+ 1. Add `classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'` to root build.gradle under `buildscript { dependencies {`
+ 2. Add the following lines to your library/build.gradle  
+ ```
+ apply plugin: 'com.github.dcendents.android-maven'  
+ 
+ group='com.github.YourUsername'
+ ```
 
 After these changes go to the root of your project and run:
 
-    gradle install
+    ./gradlew install
     
 It will install your library in your local maven repository ($HOME/.m2/repository).
 If install works and you have added a GitHub release it should work jitpack.io
+
+Please check which version of android-maven plugin is required for your Gradle version.  
 
 ## Examples
 
@@ -41,6 +49,8 @@ dependencies {
 }
 ```
 
+Note: do not add the jitpack.io repository under `buildscripts` 
+
 ## Adding a sample app 
 
 If you add a sample app to the same repo then your app needs to depend on the library. To do this in your app/build.gradle add a dependency in the form:
@@ -51,7 +61,7 @@ dependencies {
 }
 ```
 
-where 'library' is the name of the gradle module.
+where 'library' is the name of your library module.
 
 ## Other notes
 
