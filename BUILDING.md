@@ -1,6 +1,6 @@
 # Guide to building projects
 
-JitPack currently can build **Gradle**, **Maven**, **Sbt** and **Leiningen** projects. Support for other build frameworks is coming later on.
+JitPack currently can build **Gradle**, **Maven**, **Sbt** and **Leiningen** projects. Let us know if you want to use it with other build tools.
 
 If the project has a build.gradle file then it will be built using Gradle otherwise JitPack will look for a pom.xml, build.sbt or project.clj file. The build.gradle file can also be located in a subfolder.
 
@@ -145,7 +145,7 @@ The easiest way is to open a GitHub issues or come chat on https://gitter.im/jit
 
 You can remove builds that didn't succeed if you *Sign In* on [JitPack.io](https://jitpack.io) and look up your repository. Requesting them again will result in the project being rebuilt.
 
-You may need to run gradle with `--refresh-dependencies` flag in order to re-fetch the dependency.
+You may need to run gradle with `--refresh-dependencies` flag in order to re-fetch the dependency. In maven use the `-U` flag.
 
 ## Clean gradle cache
 
