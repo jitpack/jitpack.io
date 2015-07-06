@@ -28,6 +28,7 @@ Please check which version of android-maven plugin is required for your Gradle v
 ## Examples
 
 - Android-Example https://github.com/jitpack/android-example
+- Multiple build variants https://github.com/jitpack-io/android-jitpack-library-example
 
 ## Installing
 
