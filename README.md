@@ -112,16 +112,26 @@ Other Features
 - Build by tag and by commit id.
 - Finds build files in sub-folders if there is no build file at the root of the repository
 
-Motivation
+Custom domain name
 ======
 
-There are a lot of great libraries on GitHub but unfortunately many of them are not published on any public repositories. You could always check out the code, build and deploy locally:
+If you want to use your own domain name as the groupId instead of com.github.yourcompany, you can.
+We support mapping your domain name to your GitHub organization. Then instead of 'com.github.yourcompany' groupId you can use 'com.yourcompany' while the name of the project and version remains the same. 
 
- - [Can I use a GitHub project directly in Maven?](http://stackoverflow.com/q/8871056/1180621) question on StackOverflow
+To enable your own domain name:
+  1. Add a DNS TXT record that maps git.yourcompany.com to https://github.com/yourcompany
+  2. Go to https://jitpack.io/#com.yourcompany/yourrepo and click Look up. If DNS resolution worked then you should see a list of versions. 
+  3. Select the version you want and click 'Get it' to see Maven/Gradle instructions.
 
-but wouldn't it be great if the library was already built and available to use? Well now it is.
+Example: https://jitpack.io/#io.jitpack/gradle-simple
 
-With JitPack all the author needs to do is create a [GitHub Release](https://github.com/blog/1547-release-your-software) and the project becomes available for everyone to use. So sharing releases is simpler for authors as well.
+To check that the DNS TXT record was added run the command `dig txt git.yourcompany.com`. For example:
+```
+> dig txt git.jitpack.io
+...
+;; ANSWER SECTION:
+git.jitpack.io.		600	IN	TXT	"https://github.com/jitpack"
+```
 
 Other
 ======
