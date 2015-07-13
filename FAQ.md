@@ -12,8 +12,19 @@ Yes. See https://jitpack.io/private
 
 **How can I get the latest snapshot of a repository?**
 
-In your build file set the version of your dependency to `-SNAPSHOT`. 
+In your build file set the version of your dependency to `-SNAPSHOT`. This is usefull during development but we don't recommend to be used in production.
+
 You can also customize how often you want Gradle to check for new snapshots - see [the documentation](https://docs.gradle.org/1.8-rc-1/userguide/dependency_management.html#sec:controlling_caching). 
+
+**Can I use my own domain name?**
+
+Yes. We support mapping your domain name to your GitHub organization. Then instead of 'com.github.yourcompany' groupId you can use 'com.yourcompany'. 
+
+Steps:
+1. Add a DNS TXT record: git.yourcompany.com -> https://github.com/yourcompany
+2. Go to https://jitpack.io/#com.yourcompany/yourrepo and click Look up. If DNS resolution worked then you should see a list of versions. 
+3. Select the version you want and click 'Get it' to see Maven/Gradle instructions.
+
 
 **Will my builds be reproducible?**
 
@@ -21,9 +32,11 @@ Absolutely. Once JitPack builds a project it keeps the build artifacts (jar, aar
 
 JitPack encourages reproducible builds in general since you need to have a working build file in order to publish artifacts. See also [Reproducible Build](http://martinfowler.com/bliki/ReproducibleBuild.html) article by Martin Fowler.
 
+Note that -SNAPSHOT version will always provide the latest build therefore its only recommended during development and not in production.
+
 **Is this like depending on source code repositories in other languages?**
 
-Not really. With JitPack you specify which exact version you want and JitPack builds it. You can't have a dependency on the latest HEAD version. The author of the repository controls when to release a new version using GitHub's releases so from a consumer's perspective it's a typical package repository.
+Not really. With JitPack you specify which exact version you want and JitPack builds it. The author of the repository controls when to release a new version using GitHub's releases so from a consumer's perspective it's a typical package repository. 
 
 **How are the builds secured?**
 
