@@ -25,6 +25,7 @@ Steps:
   2. Go to https://jitpack.io/#com.yourcompany/yourrepo and click Look up. If DNS resolution worked then you should see a list of versions. 
   3. Select the version you want and click 'Get it' to see Maven/Gradle instructions.
 
+Example: https://jitpack.io/#io.jitpack/gradle-simple
 
 **Will my builds be reproducible?**
 
