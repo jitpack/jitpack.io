@@ -107,6 +107,7 @@ Other Features
 ======
 - Javadoc publishing. If the project produces a javadoc.jar then you can browse the javadoc files directly at: 
     - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/`   
+    - See the example projects on how to configure your build file. [Android example](https://github.com/jitpack/android-example/blob/master/library/build.gradle)
 - Private repositories https://jitpack.io/private
 - Dynamic versions. You can youse Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built.
 - Build by tag and by commit id.
