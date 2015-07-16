@@ -8,7 +8,7 @@ In case you need to redo a release the best option is to create a new version on
 
 **Can I use JitPack with private repositories?**
 
-Yes. See https://jitpack.io/private
+Yes. See [private repositories](https://jitpack.io/private)
 
 **How can I get the latest snapshot of a repository?**
 
@@ -21,6 +21,7 @@ You can also customize how often you want Gradle to check for new snapshots - se
 Yes. We support mapping your domain name to your GitHub organization. Then instead of 'com.github.yourcompany' groupId you can use 'com.yourcompany'. 
 
 Steps:
+
   1. Add a DNS TXT record: git.yourcompany.com -> https://github.com/yourcompany
   2. Go to https://jitpack.io/#com.yourcompany/yourrepo and click Look up. If DNS resolution worked then you should see a list of versions. 
   3. Select the version you want and click 'Get it' to see Maven/Gradle instructions.

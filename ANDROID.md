@@ -8,13 +8,16 @@ Builds are run with Java 7 by default.
 To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin.
 
 If using Gradle 2.4:
+
  1. Add `classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3'` to root build.gradle under `buildscript { dependencies {`
- 2. Add the following lines to your library/build.gradle  
- ```
+
+ 2. Add the following lines to your library/build.gradle:  
+
+```gradle
  apply plugin: 'com.github.dcendents.android-maven'  
  
  group='com.github.YourUsername'
- ```
+```
 
 After these changes go to the root of your project and run:
 
@@ -27,8 +30,9 @@ Please check which version of android-maven plugin is required for your Gradle v
 
 ## Examples
 
-- Android-Example https://github.com/jitpack/android-example
-- Multiple build variants https://github.com/jitpack-io/android-jitpack-library-example
+- [Android-Example](https://github.com/jitpack/android-example) 
+
+- [Multiple build variants](https://github.com/jitpack-io/android-jitpack-library-example)
 
 ## Installing
 
@@ -66,4 +70,5 @@ where 'library' is the name of your library module.
 ## Other notes
 
 - By default the android-maven plugin generates an 'aar' file from your library. If you want to have a 'jar' instead take a look at the example project's library/build.gradle.
+
 - Android NDK builds are not yet supported on JitPack
