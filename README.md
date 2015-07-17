@@ -1,13 +1,10 @@
 # JitPack.io
 
-This is a repository for documentation and issues of [https://jitpack.io](https://jitpack.io) service
+JitPack is a novel package repository for JVM and Android projects. It builds Git projects on demand and provides you with ready-to-use artifacts (jar, aar). The core idea is that in order to publish your library you don't need to build and upload it yourself. Just push your changes and create a GitHub release. Done!
 
 Need help setting up a repo? Come to  [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jitpack/jitpack.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-About
-======
-
-JitPack is a novel package repository for JVM projects. It builds Git projects on demand and provides you with ready-to-use artifacts (jar, aar). The core idea is that in order to publish your library you don't need to build and upload it yourself. Just push your changes and create a GitHub release. Done!
+For issues and enhancements please use the [JitPack GitHub repository](https://github.com/jitpack/jitpack.io/). The repository contains this documentation and contributions are welcome there as well.
 
 How to
 ======
@@ -28,9 +25,7 @@ To get a GitHub project into your build:
   
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
-Too see an example head to https://jitpack.io and 'Look Up' a GitHub repository by url.
-
-*Note*: when using multiple repositories in build.gradle it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
+Too see an example head to [jitpack.io](https://jitpack.io) and 'Look Up' a GitHub repository by url.
 
 Gradle example:
 ```gradle
@@ -42,6 +37,8 @@ Gradle example:
         compile 'com.github.User:Repo:Tag'
    }
 ```
+
+*Note*: when using multiple repositories in build.gradle it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
 
 ### Snapshots
 
@@ -58,6 +55,8 @@ Snapshot versions are useful during development and JitPack provides two ways to
 See also the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details and for instructions on building multi-module projects.
 
 If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the short commit id as the version. You can also place tags on other branches and then build using those tags.
+
+*Tip:* You can also automate GitHub releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
 
 ## BitBucket
 
@@ -77,8 +76,6 @@ Releasing your library on JitPack is very simple:
 As long as there's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack.
 
 *Tip:* You can try out your code before a release by using the commit hash as the version.
-
-*Tip:* You can also automate GitHub releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
 
 ### Some extras to consider:
 
@@ -115,7 +112,8 @@ Other Features
     - See the example projects on how to configure your build file. [Android example](https://github.com/jitpack/android-example/blob/master/library/build.gradle)
 - [Private repositories](https://jitpack.io/private)
 - Dynamic versions. You can youse Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built.
-- Build by tag and by commit id.
+- Build by tag, commit id or `-SNAPSHOT`.
+- You can also use your own domain name for groupId
 - Finds build files in sub-folders if there is no build file at the root of the repository
 
 Custom domain name

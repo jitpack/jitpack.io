@@ -45,6 +45,7 @@ to build and publish Maven projects.
 ### Example projects
 
  - Simple - https://github.com/jitpack/maven-simple
+
  - Multiple modules - https://github.com/jitpack/maven-modular
   
 # Multi-module projects
@@ -74,7 +75,9 @@ compile 'com.github.User:Repo:Tag'
 ```
 
 Examples:
+
  - Multiple Gradle modules - https://github.com/jitpack/gradle-modular
+
  - Multiple Maven modules - https://github.com/jitpack/maven-modular
 
 ## Sbt projects
