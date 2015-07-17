@@ -29,7 +29,11 @@ To start using private repositories you will first need to grant JitPack access.
 
 The id of the server must be the same you use in your pom.xml for JitPack.io.
 
-## Using
+### Bitbucket
+
+Create a Team in Bitbucket and generate an API key for that team. Use the API key as an authentication token.
+
+## Usage
 
 Once you are set up you can try installing one of your private repositories:
 
@@ -61,7 +65,7 @@ Your private repository source code remains private.
 
 ## Artifact sharing
 
-In some cases you want to distribute your private project publicly while keeping the source private. In this case:
+In some cases you want to distribute your project publicly while keeping the source private. In this case:
 
 1. Sign In on JitPack.io homepage
 2. Look up your private repository
