@@ -129,7 +129,11 @@ jdk:
 
 # Troubleshooting
 
-If there is an issue with a build you will see a link to the log in the Status column. You can also inspect the build log for any other build using the URL:
+If there is an issue with a build you will see a link to the log in the Status column. 
+
+   ![Build log](img/delete.png)
+
+You can also inspect the build log for any other build using the URL:
 
 ```
 https://jitpack.io/com/github/User/Repo/Tag/build.log
@@ -141,7 +145,7 @@ and it sometimes helps to look at the pom file itself:
 curl -v https://jitpack.io/com/github/User/Repo/Tag/Repo-Tag.pom
 ```
 
-Although we monitor all the builds feel free to get in touch any time you face an issue. 
+Although we monitor builds feel free to get in touch any time you face an issue or click the Report button. 
 The easiest way is to open a GitHub issues or come chat on https://gitter.im/jitpack-io
 
 ## Rebuilding

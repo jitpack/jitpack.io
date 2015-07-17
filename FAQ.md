@@ -42,7 +42,7 @@ Not really. With JitPack you specify which exact version you want and JitPack bu
 
 **How are the builds secured?**
 
-Each project is built in its own Docker container and has no access to other builds or files produced by other builds. Containers run only with normal user privileges (no root). All files produced by the build are served over HTTPS (only). 
+Each project is built in its own Docker container and has no access to other builds or files produced by other builds. Containers run only with normal user privileges (no root). All communication between our servers is VPN secured and files produced by the build are served over HTTPS (only). 
 
 **Can I rebuilt my project?**
 

@@ -53,7 +53,7 @@ dependencies {
 }
 ```
 
-Note: do not add the jitpack.io repository under `buildscripts` 
+Note: do not add the jitpack.io repository under `buildscript` 
 
 ## Adding a sample app 
 
