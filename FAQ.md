@@ -1,7 +1,7 @@
 Frequently Asked Questions
 -
 
-**What happens if a tag is deleted on GitHub?**
+**What happens if a tag or repository is deleted on GitHub?**
 
 If the project was already built JitPack will continue serving the existing artifacts. It will not rebuilt the project at the new tag. 
 In case you need to redo a release the best option is to create a new version on GitHub.
@@ -48,6 +48,8 @@ Each project is built in its own Docker container and has no access to other bui
 
 If your first build wasn't successfull you can rebuild it. If you Sign In on JitPack.io then you'll be able to remove the old build and re-requesting it will trigger a new build. 
 
+See also https://jitpack.io/docs/BUILDING/#rebuilding
+
 **Can version ranges be used with JitPack?**
 
 You can use version ranges and Gradle's dynamic versions for releases. Currenly they only resolve to releases that have been built.
@@ -59,4 +61,4 @@ Up to 15 minutes
 
 **Other questions**
 
-Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack
+Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack/jitpack-io
