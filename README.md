@@ -29,9 +29,11 @@ Too see an example head to [jitpack.io](https://jitpack.io) and 'Look Up' a GitH
 
 Gradle example:
 ```gradle
-   repositories { 
-        jcenter()
-        maven { url "https://jitpack.io" }
+    allprojects {
+        repositories { 
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
    }
    dependencies {
         compile 'com.github.User:Repo:Tag'
