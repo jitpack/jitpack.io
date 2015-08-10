@@ -53,9 +53,13 @@ Then add the dependency to your private repository just like you do with a publi
 
 ```gradle
 dependencies {
-	compile 'com.github.User:PrivateRepo:Tag'}
+	compile 'com.github.User:PrivateRepo:Tag'
+}
 ```
 
+## Private dependencies
+
+Your private GitHub projects can have dependencies on other GitHub projects. JitPack supports resolution of these dependencies seamlessly and there's no extra configuration required. The token you use to build the first project will also be used to build it's dependencies.
 
 ## Permissions
 
