@@ -29,6 +29,23 @@ To start using private repositories you will first need to grant JitPack access.
 
 The id of the server must be the same you use in your pom.xml for JitPack.io.
 
+### Sbt setup
+
+Create a new file $HOME/.sbt/.credentials and insert your authentication token:
+```
+realm=JitPack
+host=jitpack.io
+user=AUTHENTICATION_TOKEN
+password=.
+```
+
+Then add this line to your build.sbt:
+```sbt
+credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
+```
+
+Note that the `realm` property in the credentials file is case sensitive and needs to be exactly `JitPack`.
+
 ### Bitbucket
 
 Create a Team in Bitbucket and generate an API key for that team. Use the API key as an authentication token.
