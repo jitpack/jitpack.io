@@ -113,7 +113,7 @@ Other Features
     - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/`   
     - See the example projects on how to configure your build file. [Android example](https://github.com/jitpack/android-example/blob/master/library/build.gradle)
 - [Private repositories](https://jitpack.io/private)
-- Dynamic versions. You can youse Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built.
+- Dynamic versions. You can youse Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built. JitPack periodically checks for new releases and builds them ahead-of-time.
 - Build by tag, commit id or `-SNAPSHOT`.
 - You can also use your own domain name for groupId
 - Finds build files in sub-folders if there is no build file at the root of the repository
