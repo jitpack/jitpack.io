@@ -31,7 +31,7 @@ After these changes go to the root of your project and run:
 It will install your library in your local maven repository ($HOME/.m2/repository).
 If install works and you have added a GitHub release it should work jitpack.io
 
-*Important* Please check [here](https://github.com/dcendents/android-maven-gradle-plugin#note-on-releases) which version of android-maven plugin is required for your Gradle version. Your Gradle version is specified in gradle/wrapper/gradle-wrapper.properties file.    
+**Important:** Please check [here](https://github.com/dcendents/android-maven-gradle-plugin#note-on-releases) which version of android-maven plugin is required for your Gradle version. Your Gradle version is specified in gradle/wrapper/gradle-wrapper.properties file.    
 
 ## Examples
 
