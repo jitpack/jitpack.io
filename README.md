@@ -59,6 +59,8 @@ configurations.all {
 ```
 Or you could also run Gradle from the command line with the `--refresh-dependencies` flag. See the [Gradle documentation](https://docs.gradle.org/2.5/userguide/dependency_management.html#changing-module-cache-control) for more information on how to configure caching for *changing* dependencies.
 
+*Note* If using Android Studio don't forget to press File->Synchronize after updating to a newer snapshot.
+
 ## Building
 
 See also the [Guide to building](https://github.com/jitpack/jitpack.io/blob/master/BUILDING.md) for more details and for instructions on building multi-module projects.
