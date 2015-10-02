@@ -5,7 +5,7 @@ Builds are run with Java 7 by default.
 
 ## Gradle
 
-To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin.
+To enable installing into local maven repository and JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin. 
 
 If using Gradle *2.4* or later:
 
@@ -24,11 +24,13 @@ buildscript {
  group='com.github.YourUsername'
 ```
 
-After these changes go to the root of your project and run:
+You should normally have the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) in your Git repository. If you don't create it using the command `gradle wrapper`.
+
+After these changes go to the root of your project and run the Gradle wrapper with:
 
     ./gradlew install
     
-It will install your library in your local maven repository ($HOME/.m2/repository).
+It will install your library in your local maven repository ($HOME/.m2/repository). 
 If install works and you have added a GitHub release it should work jitpack.io
 
 **Important:** Please check [here](https://github.com/dcendents/android-maven-gradle-plugin#note-on-releases) which version of android-maven plugin is required for your Gradle version. Your Gradle version is specified in gradle/wrapper/gradle-wrapper.properties file.    
