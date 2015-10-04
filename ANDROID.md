@@ -24,7 +24,7 @@ buildscript {
  group='com.github.YourUsername'
 ```
 
-You should normally have the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) in your Git repository. If you don't create it using the command `gradle wrapper`.
+You should normally have the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) in your Git repository. If you don't create it using the command `gradle wrapper` and commit it. Also check that the generated gradle-wrapper.jar is not ignored with .gitignore rules.
 
 After these changes go to the root of your project and run the Gradle wrapper with:
 
