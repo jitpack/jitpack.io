@@ -119,6 +119,12 @@ and then the dependency:
 :dependencies [[com.github.User/Repo "Tag"]]
 ```
 
+# Build environment
+
+Each build will have these environment variables:
+- `JITPACK=true`
+- `JAVA_HOME=<detected java home>`
+
 # Java version
 
 JitPack will compile projects using Oracle Java 8. See the example projects on how to set a different target version in your build file. 
