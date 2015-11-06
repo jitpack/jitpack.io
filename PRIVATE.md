@@ -80,7 +80,7 @@ Your private GitHub projects can have dependencies on other GitHub projects. Jit
 
 ## Permissions
 
-Private repository builds are accessible to you and anyone who has Push permissions for the Git repository itself. For example, you may trigger a build of your library and your colleague will be able to install the library straight away.
+Private repository builds are accessible to you and anyone who has Read permissions for the Git repository itself. For example, you may trigger a build of your library and your colleague will be able to install the library straight away.
 
 Your private repository source code remains private.
 
