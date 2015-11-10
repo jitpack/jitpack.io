@@ -129,10 +129,9 @@ Each build will have these environment variables:
 
 - `GIT_COMMIT=<commit at which we're building>`
 
-- `RELEASE_REPOSITORY_URL=file://$HOME/.m2/repository`
+- `GIT_BRANCH=<current branch>`
 
-- `SNAPSHOT_REPOSITORY_URL=file://$HOME/.m2/repository`
-
+- `GIT_DESCRIBE=<output of git describe command>`
 
 # Java version
 
