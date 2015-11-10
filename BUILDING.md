@@ -122,8 +122,17 @@ and then the dependency:
 # Build environment
 
 Each build will have these environment variables:
+
 - `JITPACK=true`
+
 - `JAVA_HOME=<detected java home>`
+
+- `GIT_COMMIT=<commit at which we're building>`
+
+- `RELEASE_REPOSITORY_URL=file://$HOME/.m2/repository`
+
+- `SNAPSHOT_REPOSITORY_URL=file://$HOME/.m2/repository`
+
 
 # Java version
 
