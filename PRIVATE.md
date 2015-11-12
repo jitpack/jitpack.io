@@ -8,9 +8,9 @@ You can also share your build artifacts (jar, aar) publicly while keeping the so
 
 To start using private repositories you will first need to grant JitPack access. Open [https://jitpack.io/private](https://jitpack.io/private#auth) and follow the steps:
 
-1. Click Authorize to get an authentication token
+1. Click Authorize to get your personal authentication token. Each member of your team needs to get their own token.
 2. Order your JitPack Account [here](https://jitpack.io/private#subscribe)
-3. Add the token to $HOME/.gradle/gradle.properties like this:
+3. Add the token to $HOME/.gradle/gradle.properties:
     - `authToken=AUTHENTICATION_TOKEN`
 	
     - For Maven add the token to 	$HOME/.m2/settings.xml :
