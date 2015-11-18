@@ -100,7 +100,7 @@ JitPack also supports cross-building with the %% syntax:
 ```sbt
 libraryDependencies += "com.github.User" %% "Repo" % "Tag"
 ```
-which will build the dependency with your current Scala version.
+which will build the dependency with your current Scala version by calling `sbt ++SCALA_VERSION`.
 
 ## Leiningen projects
 
