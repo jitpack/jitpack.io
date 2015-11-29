@@ -1,4 +1,6 @@
-# Guide to building projects
+# Guide to publishing libraries
+
+In order to publish your library on JitPack you just need a working build file in your Git repository.
 
 JitPack currently can build **Gradle**, **Maven**, **Sbt** and **Leiningen** projects. Let us know if you want to use it with other build tools.
 
@@ -22,7 +24,7 @@ then JitPack will run:
 
 to install the jar and pom file in it's local maven repository. With maven-publishing plugin it will run `./gradlew build publishToMavenLocal`. 
 
-Note that if your project isn't using a Gradle wrapper JitPack will build it with Gradle 2.7. Therefore it is recommended to use the wrapper.
+Note that if your project isn't using a Gradle wrapper JitPack will build it with a recent version of Gradle. Therefore it is recommended to use the wrapper.
 
 ### Example projects
 
@@ -32,7 +34,7 @@ Note that if your project isn't using a Gradle wrapper JitPack will build it wit
 
 ## Android projects
 
-See the [Guide to building Android projects](https://github.com/jitpack/jitpack.io/blob/master/ANDROID.md) with Gradle
+See the [Guide to publising Android libraries](ANDROID.md) with Gradle
 
 ## Maven projects
 
