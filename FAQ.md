@@ -63,6 +63,10 @@ You can use version ranges and Gradle's dynamic versions for releases. Currenly 
 
 Up to 15 minutes
 
+**Is JitPack similar to Maven Central?**
+
+JitPack is a public maven repository and serves maven artifacts. In that sense it is similar to Maven Central. However, JitPack takes a completely different approach to how you get your artifacts in the repository. With Maven Central you build the artifacts yourself and then upload them. With JitPack you create a git tag for a release and it will build the artifacts from source.
+
 **Other questions**
 
-Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack/jitpack-io
+Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack/jitpack.io
