@@ -1,4 +1,6 @@
-# Android library builds
+# Publish Android library 
+
+In order to publish your Android library on JitPack you just need a working build file in your Git repository.
 
 Android SDK is available in the build environment and ANDROID_HOME variable is already set when the build starts.
 Builds are run with Java 7 by default.
