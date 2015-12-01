@@ -108,10 +108,6 @@ As long as there's a build file in your repository and it can install your libra
    
 - Add sources jar. Creating the sources jar makes it easier for others to use your code and contribute.
 
-- Add a badge. You can add a version badge to your readme.md, for example:
-
-[![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
-
 ```
 [![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
 ```
