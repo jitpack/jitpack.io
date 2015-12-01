@@ -86,7 +86,7 @@ Publishing your library on JitPack is very simple:
 
 - Create a [GitHub Release](https://github.com/blog/1547-release-your-software)  
 
-As long as there's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack. See the [Guide to building](BUILDING.md) on how to publish JVM libraries and [Guide to building](ANDROID.md) on how to publish Android libraries.
+As long as there's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack. See the [Guide to building](BUILDING.md) on how to publish JVM libraries and [Guide to Android](ANDROID.md) on how to publish Android libraries.
 
 *Tip:* You can try out your code before a release by using the commit hash as the version.
 
