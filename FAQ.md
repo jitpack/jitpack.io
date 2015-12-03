@@ -36,6 +36,10 @@ JitPack encourages reproducible builds in general since you need to have a worki
 
 Note that -SNAPSHOT version will always provide the latest build therefore its only recommended during development and not in production.
 
+**How are the artifacts you build licensed?**
+
+Build artifacts licenses are specified in the originating source code repositories. 
+
 **Is this like depending on source code repositories in other languages?**
 
 Not really. With JitPack you specify which exact version you want and JitPack builds it. The author of the repository controls when to release a new version using GitHub's releases so from a consumer's perspective it's a typical package repository. 
