@@ -106,10 +106,6 @@ As long as there's a build file in your repository and it can install your libra
    
 - Add sources jar. Creating the sources jar makes it easier for others to use your code and contribute.
 
-```
-[![Release](https://img.shields.io/github/release/jitpack/gradle-simple.svg?label=maven)](https://jitpack.io/#jitpack/gradle-simple)
-```
-
 - Show up-to-date version in HTML. If your project has a website or GitHub pages then you can display the latest release using JavaScript: https://gist.github.com/jitpack-io/5bd698d35303b2c370a0
 
 Other Features
