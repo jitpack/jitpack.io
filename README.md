@@ -69,13 +69,14 @@ If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-r
 
 *Tip:* You can also automate GitHub releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
 
-## BitBucket
+## Other Git hosts
 
-Using BitBucket is similar to using GitHub repositories. The only difference is:
+JitPack also works with other Git hosting providers. The only difference is the groupId of your artifacts:
 
- - *Group:* org.bitbucket.Username
+ - BitBucket: *org.bitbucket*.Username:Repo:Tag
+ - GitLab: *com.gitlab*.Username:Repo:Tag
 
-Too see an example head to https://jitpack.io and 'Look Up' a BitBucket repository by url.
+Too see an example head to https://jitpack.io and 'Look Up' a Git repository by url.
 
 Publishing on JitPack
 ======
