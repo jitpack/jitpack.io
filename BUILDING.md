@@ -155,16 +155,16 @@ If there is an issue with a build you will see a link to the log in the Status c
 
    ![Build log](img/delete.png)
 
-You can also inspect the build log for any other build using the URL:
+You can also inspect the build log using the URL:
 
 ```
 https://jitpack.io/com/github/User/Repo/Tag/build.log
 ```
 
-and it sometimes helps to look at the pom file itself:
+and browse the files:
 
 ```
-curl -v https://jitpack.io/com/github/User/Repo/Tag/Repo-Tag.pom
+https://jitpack.io/com/github/User/Repo/Tag/
 ```
 
 Although we monitor builds feel free to get in touch any time you face an issue or click the Report button. 
