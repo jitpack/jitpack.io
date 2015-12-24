@@ -128,9 +128,9 @@ We support mapping your domain name to your GitHub organization. Then instead of
 
 To enable your own domain name:  
 
-  1. Add a DNS TXT record that maps git.yourcompany.com to https://github.com/yourcompany  
+  1. Add a DNS TXT record that maps git.yourcompany.com to https://github.com/yourcompany. This needs to be configured at your domain name provider such as GoDaddy. For example see [How to add a TXT record](https://uk.godaddy.com/help/add-a-txt-record-19232).  
 
-  2. Go to https://jitpack.io/#com.yourcompany/yourrepo and click Look up. If DNS resolution worked then you should see a list of versions.   
+  2. Go to https://jitpack.io/#com.example/yourrepo and click Look up. If DNS resolution worked then you should see a list of versions.   
 
   3. Select the version you want and click 'Get it' to see Maven/Gradle instructions.  
 
@@ -138,7 +138,7 @@ Example: [https://jitpack.io/#io.jitpack/gradle-simple](https://jitpack.io/#io.j
 
 To check that the DNS TXT record was added run the command `dig txt git.yourcompany.com`. For example:
 ```
-> dig txt git.jitpack.io
+~$ dig txt git.jitpack.io
 ...
 ;; ANSWER SECTION:
 git.jitpack.io.		600	IN	TXT	"https://github.com/jitpack"
