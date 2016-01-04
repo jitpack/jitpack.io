@@ -48,7 +48,9 @@ Note that the `realm` property in the credentials file is case sensitive and nee
 
 ### Bitbucket
 
-Create a Team in Bitbucket and generate an API key for that team. Use the API key as an authentication token.
+Create a Team in Bitbucket and generate an API key under the team's [admin page](img/bitbucket-apikey.png). 
+Use the API key as an authentication token.
+
 
 ## Usage
 
