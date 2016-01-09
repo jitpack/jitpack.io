@@ -143,7 +143,7 @@ Android projects are build with Oracle Java 7 by default. Maven projects that sp
 
 If your project uses Travis or Circle CI then JitPack will read the lowest jdk version from yml file and use that to build.
 
-Alternatively create a `.jitpack.yml` file in the root of your repository and specify a jdk version:
+Alternatively create a `jitpack.yml` file in the root of your repository and specify a jdk version:
 ```yml
 jdk:
   - oraclejdk8
