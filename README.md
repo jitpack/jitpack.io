@@ -110,11 +110,18 @@ Add dependency information in your README. Tell the world where to get your libr
 
 ### Badges
 
-Add this line to your README.md to show a status badge:
+Add this line to your README.md to show a status badge with the latest release:
 
 `[![Release](https://jitpack.io/v/User/Repo.svg)](https://jitpack.io/#User/Repo)`
 
 [![Release](https://jitpack.io/v/jitpack/maven-simple.svg)](https://jitpack.io/#jitpack/maven-simple)
+
+If you are using a custom domain or BitBucket then use:
+
+`[![Release](https://jitpack.io/v/com.example/Repo.svg)](https://jitpack.io/#com.example/Repo)`
+
+`[![Release](https://jitpack.io/v/org.bitbucket.User/Repo.svg)](https://jitpack.io/#org.bitbucket.User/Repo)`
+
 
 Other Features
 ======
