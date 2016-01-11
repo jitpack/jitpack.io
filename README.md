@@ -74,6 +74,7 @@ If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-r
 JitPack also works with other Git hosting providers. The only difference is the groupId of your artifacts:
 
  - BitBucket: *org.bitbucket*.Username:Repo:Tag
+ 
  - GitLab: *com.gitlab*.Username:Repo:Tag
 
 Too see an example head to https://jitpack.io and 'Look Up' a Git repository by url.
@@ -91,7 +92,7 @@ As long as there's a build file in your repository and it can install your libra
 
 ### Some extras to consider:
 
-- Add dependency information in your README. Tell the world where to get your library:
+Add dependency information in your README. Tell the world where to get your library:
  
 ```gradle
    repositories { 
@@ -102,23 +103,32 @@ As long as there's a build file in your repository and it can install your libra
          compile 'com.github.jitpack:gradle-simple:1.0'
    }
 ```  
-
-  It's easy to look up the dependency information on https://jitpack.io. Just paste your GitHub url and press Look Up
    
 - Add sources jar. Creating the sources jar makes it easier for others to use your code and contribute.
 
-- Show up-to-date version in HTML. If your project has a website or GitHub pages then you can display the latest release using JavaScript: https://gist.github.com/jitpack-io/5bd698d35303b2c370a0
+- Show up-to-date version in HTML. If your project has a website or GitHub pages then you can display the latest release using [this script](https://gist.github.com/jitpack-io/5bd698d35303b2c370a0)
+
+### Badges
+
+Add this line to your README.md to show a status badge:
+
+`[![Release](https://jitpack.io/v/User/Repo.svg)](https://jitpack.io/#User/Repo)`
+
+[![Release](https://jitpack.io/v/jitpack/maven-simple.svg)](https://jitpack.io/#jitpack/maven-simple)
 
 Other Features
 ======
 - Javadoc publishing. If the project produces a javadoc.jar then you can browse the javadoc files directly at: 
     - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/`   
     - See the example projects on how to configure your build file. [Android example](https://github.com/jitpack/android-example/blob/master/library/build.gradle)
+    
 - [Private repositories](https://jitpack.io/private)
+
 - Dynamic versions. You can youse Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built. JitPack periodically checks for new releases and builds them ahead-of-time.
-- Build by tag, commit id or `-SNAPSHOT`.
+
+- Build by tag, commit id or `anyBranch-SNAPSHOT`.
+
 - You can also use your own domain name for groupId
-- Finds build files in sub-folders if there is no build file at the root of the repository
 
 Custom domain name
 ======
