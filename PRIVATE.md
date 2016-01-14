@@ -4,12 +4,16 @@ JitPack supports building and installing from private Git repositories. Build ar
 
 You can also share your build artifacts (jar, aar) publicly while keeping the source code private. For example, you can easily distribute your library to your users without giving them access to code.
 
+A JitPack Subscription is tied to a specific GitHub/Bitbucket account which can be either a user or an organization. All repositories under that account can be built with JitPack and used by members of the organization.
+
 ## Set up
 
 To start using private repositories you will first need to grant JitPack access. Open [https://jitpack.io/private](https://jitpack.io/private#auth) and follow the steps:
 
 1. Click Authorize to get your personal authentication token. Each member of your team needs to get their own token.
-2. Order your JitPack Account [here](https://jitpack.io/private#subscribe)
+
+2. Order your JitPack Account [here](https://jitpack.io/private#subscribe). 
+
 3. Add the token to $HOME/.gradle/gradle.properties:
     - `authToken=AUTHENTICATION_TOKEN`
 	
@@ -57,6 +61,7 @@ Use the API key as an authentication token.
 Once you are set up you can try installing one of your private repositories:
 
 1. Go to [https://jitpack.io/private](https://jitpack.io/private) and 'Look up' your private repository.
+
 2. Follow the instructions and add credentials to your build file if using Gradle:
 
 ```gradle
