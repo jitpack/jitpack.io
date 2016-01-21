@@ -50,6 +50,13 @@ credentials += Credentials(Path.userHome / ".sbt" / ".credentials")
 
 Note that the `realm` property in the credentials file is case sensitive and needs to be exactly `JitPack`.
 
+### Leiningen
+
+Add the token to project.clj as the username:
+```
+  :repositories [["jitpack" {:url"https://jitpack.io" :username "AUTHENTICATION_TOKEN" :password "."  } ]]
+```
+
 ### Bitbucket
 
 Create a Team in Bitbucket and generate an API key under the team's [admin page](img/bitbucket-apikey.png). 
