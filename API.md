@@ -16,7 +16,7 @@ Output:
     "maven-simple" : {
       "1.1" : "ok",
       "1.0" : "ok",
-      "0.1" : "Error",
+      "0.5" : "Error",
       "0.1" : "ok"
     }
   }
