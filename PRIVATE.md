@@ -100,6 +100,10 @@ Your private repository source code remains private.
 
 ## Artifact sharing
 
+There are two ways to share your build artifacts - public and private.
+
+### Artifact sharing publicly
+
 In some cases you want to distribute your project publicly while keeping the source private. In this case:
 
 1. Sign In on JitPack.io homepage
@@ -110,6 +114,17 @@ In some cases you want to distribute your project publicly while keeping the sou
 
 Once the Lock icon turns to unlocked the project's build artifacts become public. That means your users will be able to install your library without needing an authentication token.
 
+### Artifact sharing privately
+
+Anyone with read access to your Git repo can already download the build artifacts.
+You can also add additional collaborators on JitPack.io that will have read access to the build artifacts. They will not have access to the source code.
+
+To add collaborators:
+
+1. Sign In on JitPack.io homepage
+2. Look up your private repository
+3. Click on settings
+4. Add the collaborators GitHub username
 
 
 ## Custom domain
