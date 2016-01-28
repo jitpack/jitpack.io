@@ -1,13 +1,15 @@
 # API
 
+The base url for api calls is `https://jitpack.io/api`.
+
 ## Builds
 
 Get all builds for a project and build outcomes.
 
-GET `/api/builds/:groupId/:artifactId`
+**GET** `/builds/:groupId/:artifactId`
 
 Example:
-`/api/builds/com.github.jitpack/maven-simple`
+`/builds/com.github.jitpack/maven-simple`
 
 Output:
 ```json
@@ -22,3 +24,13 @@ Output:
   }
 }
 ```
+
+## Single build
+
+Get a single build for a project and it's outcome.
+
+**GET** `/builds/:groupId/:artifactId/:tag`
+
+Example:
+`/builds/com.github.jitpack/maven-simple/1.0`
+
