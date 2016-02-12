@@ -2,6 +2,8 @@
 
 The base url for api calls is `https://jitpack.io/api`.
 
+API for private repositories uses basic authentication. Pass your authentication token as the username.
+
 ## Builds
 
 Get all builds for a project and build outcomes.
