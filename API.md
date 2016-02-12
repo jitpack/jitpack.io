@@ -34,3 +34,13 @@ Get a single build for a project and it's outcome.
 Example:
 `/builds/com.github.jitpack/maven-simple/1.0`
 
+## Latest build
+
+Get the latest build by tag. Tags are compared according to semantic versioning.
+
+**GET** `/builds/:groupId/:artifactId/latest`
+
+Get the latest build that was successfull.
+
+**GET** `/builds/:groupId/:artifactId/latestOk`
+
