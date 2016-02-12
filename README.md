@@ -122,6 +122,11 @@ If you are using a custom domain or BitBucket then use:
 
 `[![Release](https://jitpack.io/v/org.bitbucket.User/Repo.svg)](https://jitpack.io/#org.bitbucket.User/Repo)`
 
+Or if you prefer the flat-squared style:
+
+`https://jitpack.io/v/User/Repo.svg?style=flat-squared`
+
+[![Release](https://jitpack.io/v/jitpack/maven-simple.svg?style=flat-squared)](https://jitpack.io/#jitpack/maven-simple)
 
 Other Features
 ======
