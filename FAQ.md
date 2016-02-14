@@ -6,15 +6,15 @@ Frequently Asked Questions
 If the project was already built then JitPack will continue serving the existing artifacts. It will not rebuild the project at the new tag. 
 In case you need to redo a release the best option is to create a new version on GitHub.
 
+**How can I get the latest snapshot of a repository?**
+
+In your build file set the version of your dependency to `anyBranch-SNAPSHOT`. This is usefull during development but we don't recommend to be used in production.
+
+You can also customize how often you want Gradle to check for new snapshots - see [the documentation](https://docs.gradle.org/1.8-rc-1/userguide/dependency_management.html#sec:controlling_caching). 
+
 **Can I use JitPack with private repositories?**
 
 Yes. See [private repositories](https://jitpack.io/private)
-
-**How can I get the latest snapshot of a repository?**
-
-In your build file set the version of your dependency to `-SNAPSHOT`. This is usefull during development but we don't recommend to be used in production.
-
-You can also customize how often you want Gradle to check for new snapshots - see [the documentation](https://docs.gradle.org/1.8-rc-1/userguide/dependency_management.html#sec:controlling_caching). 
 
 **Can I use my own domain name?**
 
@@ -27,6 +27,10 @@ Steps:
   3. Select the version you want and click 'Get it' to see Maven/Gradle instructions.
 
 Example: https://jitpack.io/#io.jitpack/gradle-simple
+
+**Can I use tag folders?**
+
+Yes. Tag folders such as `feature/abc` are supported. Set the dependency version as `feature~abc`.
 
 **Will my builds be reproducible?**
 
