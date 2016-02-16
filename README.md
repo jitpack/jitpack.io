@@ -124,9 +124,9 @@ If you are using a custom domain or BitBucket then use:
 
 Or if you prefer the flat-squared style:
 
-`https://jitpack.io/v/User/Repo.svg?style=flat-squared`
+`https://jitpack.io/v/User/Repo.svg?style=flat-square`
 
-[![Release](https://jitpack.io/v/jitpack/maven-simple.svg?style=flat-squared)](https://jitpack.io/#jitpack/maven-simple)
+[![Release](https://jitpack.io/v/jitpack/maven-simple.svg?style=flat-square)](https://jitpack.io/#jitpack/maven-simple)
 
 Other Features
 ======
