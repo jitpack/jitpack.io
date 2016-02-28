@@ -1,4 +1,4 @@
-# API
+# API (Beta)
 
 The base url for api calls is `https://jitpack.io/api`.
 
