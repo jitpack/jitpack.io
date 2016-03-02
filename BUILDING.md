@@ -170,6 +170,16 @@ https://jitpack.io/com/github/User/Repo/Tag/
 Although we monitor builds feel free to get in touch any time you face an issue or click the Report button. 
 The easiest way is to open a GitHub issues or come chat on https://gitter.im/jitpack-io
 
+## Building ahead of time
+
+You can also build snapshots on each commit if you add a GitHub Webhooks. For example by calling this kind of url on every commit: 
+`https://jitpack.io/com/github/User/Repo/-SNAPSHOT/build.log`
+
+To add, head to repository Settings -> Webhooks & Services -> Add webhook.
+
+For private repositories you will need to pass the authentication token:
+`https://jitpack.io/com/github/User/Repo/-SNAPSHOT/build.log?access_token=AUTHENTICATION_TOKEN`
+
 ## Rebuilding
 
 You can remove builds that didn't succeed if you *Sign In* on [JitPack.io](https://jitpack.io) and look up your repository. Requesting them again will result in the project being rebuilt.
