@@ -75,6 +75,12 @@ Up to 15 minutes
 
 JitPack is a public maven repository and serves maven artifacts. In that sense it is similar to Maven Central. However, JitPack takes a completely different approach to how you get your artifacts in the repository. With Maven Central you build the artifacts yourself and then upload them. With JitPack you create a git tag for a release and it will build the artifacts from source.
 
+**How do I solve `peer not authenticated` error in Gradle?**
+
+If you are running Gradle on Linux you might get the `peer not authenticated` error. There are at least two ways to solve this:
+ - Upgrade to Gradle 2.11
+ - Run Gradle with Java 8. The project itself doesn't need to use Java 8.
+
 **Other questions**
 
 Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack-io
