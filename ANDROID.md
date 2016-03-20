@@ -1,4 +1,4 @@
-# Publish Android library 
+# Publish an Android library 
 
 In order to publish your Android library on JitPack you just need a working build file in your Git repository.
 
