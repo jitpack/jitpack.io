@@ -36,6 +36,7 @@ To delete a build and it's artifacts use:
 **DELETE** `/builds/:groupId/:artifactId/:tag`
 
 You need to be authenticated when deleting a build and your user needs to have push permissions to the git repository.
+Note that you can only delete failed builds, snapshot builds or tag builds newer than 7 days. Older versions can't be deleted because there could be builds depending on those versions.
 
 Example:
 `/builds/com.github.jitpack/maven-simple/1.0`
