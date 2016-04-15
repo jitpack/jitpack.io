@@ -34,7 +34,7 @@ Note that if your project isn't using a Gradle wrapper JitPack will build it wit
 
 ## Android projects
 
-See the [Guide to publising Android libraries](ANDROID.md) with Gradle
+See the [Guide to publishing Android libraries](ANDROID.md) with Gradle
 
 ## Maven projects
 
