@@ -25,7 +25,7 @@ To get a GitHub project into your build:
   
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
-Too see an example head to [jitpack.io](https://jitpack.io) and 'Look Up' a GitHub repository by url.
+To see an example head to [jitpack.io](https://jitpack.io) and 'Look Up' a GitHub repository by url.
 
 Gradle example:
 ```gradle
