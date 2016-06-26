@@ -135,11 +135,28 @@ Each build will have these environment variables:
 
 - `GIT_DESCRIBE=<output of git describe command>`
 
-# Java version
+# Build customization
+
+You can create a `jitpack.yml` file in the root of your repository and override the build commands:
+
+```yml
+jdk:
+  - oraclejdk8
+before_install:
+   - ./prepareEnvironment.sh
+install:
+   - echo "Running a custom install command"
+   - mvn clean install -DskipTests
+```
+
+The `install` command is expected to create build artifacts somewhere in the project's directory and
+*also* to copy them to the local Maven repository `~/.m2/repository`.
+
+## Java version
 
 JitPack will compile projects using Oracle Java 8. See the example projects on how to set a different target version in your build file. 
 
-Android projects are build with Oracle Java 7 by default. Maven projects that specify a target version in their pom will be built with that target version.
+Maven projects that specify a target version in their pom will be built with that target version.
 
 If your project uses Travis or Circle CI then JitPack will read the lowest jdk version from yml file and use that to build.
 
