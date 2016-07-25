@@ -42,7 +42,9 @@ JitPack will run:
 
     mvn install -DskipTests
     
-to build and publish Maven projects. 
+to build and publish Maven projects. If your project requires a specific Maven version then you can use the [Maven Wrapper](https://github.com/takari/maven-wrapper). In that case JitPack will run: 
+
+    ./mvnw install -DskipTests
 
 ### Example projects
 
