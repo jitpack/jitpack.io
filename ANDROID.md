@@ -3,19 +3,19 @@
 In order to publish your Android library on JitPack you just need a working build file in your Git repository.
 
 Android SDK is available in the build environment and ANDROID_HOME variable is already set when the build starts.
-Builds are run with Java 7 by default.
+Builds are run with Java 8 by default but can be configured using a jitpack.yml file.
 
 ## Gradle
 
 To enable building on JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin. 
 
-If using Gradle *2.4* or later:
+If using Gradle *3.0* or later:
 
 1) In your root build.gradle: 
 ```gradle
 buildscript { 
   dependencies {
-    classpath 'com.github.dcendents:android-maven-gradle-plugin:1.3' // Add this line
+    classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5' // Add this line
 ``` 
 
 2) In your library/build.gradle add:  
@@ -26,7 +26,7 @@ buildscript {
  group='com.github.YourUsername'
 ```
 
-3) Create a GitHub release or add a tag.
+3) Create a GitHub release or add a git tag.
 
 ## Checks
 
