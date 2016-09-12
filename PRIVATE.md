@@ -128,6 +128,7 @@ To add collaborators:
 3. Click on settings
 4. Add the collaborators GitHub username
 
+Collaborators will need to sign in on JitPack.io to get their own authentication token. 
 
 ## Custom domain
 
