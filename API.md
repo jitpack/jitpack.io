@@ -1,6 +1,6 @@
-# API (Beta)
+# API 
 
-The base url for api calls is `https://jitpack.io/api`.
+The base url for API calls is `https://jitpack.io/api`.
 
 ## Builds
 
@@ -53,7 +53,7 @@ Get the latest build that was successfull.
 
 ## Authentication
 
-API for private repositories uses basic authentication. Pass your authentication token as the username.
+API for private repositories uses basic authentication using your authentication token as the **username**. You can find your token on https://jitpack.io/private.
 
 ```
 curl -uTOKEN: https://jitpack.io/api/builds/:groupId/:artifactId/:tag  
