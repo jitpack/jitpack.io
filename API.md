@@ -8,8 +8,13 @@ Get all builds for a project and build outcomes.
 
 **GET** `/builds/:groupId/:artifactId`
 
-Example:
+For example, the project https://github.com/jitpack/maven-simple will have the path:
 `/builds/com.github.jitpack/maven-simple`
+
+and a full url:
+```
+curl https://jitpack.io/api/builds/com.github.jitpack/maven-simple
+```
 
 Output:
 ```json
@@ -24,6 +29,8 @@ Output:
   }
 }
 ```
+
+Builds are ordered by time when they were executed.
 
 ## Single build
 
