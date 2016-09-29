@@ -6,6 +6,8 @@ You can also share your build artifacts (jar, aar) publicly while keeping the so
 
 A JitPack Subscription is tied to a specific GitHub/Bitbucket account which can be either a user or an organization. All repositories under that account can be built with JitPack and used by members of the organization.
 
+Note that your GitHub organization may need to approve JitPack in order to access private repositories ([Documentation](https://help.github.com/articles/connecting-with-third-party-applications/#third-party-applications-and-organizations)).
+
 ## Set up
 
 To start using private repositories you will first need to grant JitPack access. Open [https://jitpack.io/private](https://jitpack.io/private#auth) and follow the steps:
