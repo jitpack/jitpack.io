@@ -118,7 +118,7 @@ Add dependency information in your README. Tell the world where to get your libr
 
 - [Private repositories](https://jitpack.io/private)
 
-- Dynamic versions. You can youse Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built. JitPack periodically checks for new releases and builds them ahead-of-time.
+- Dynamic versions. You can use Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built. JitPack periodically checks for new releases and builds them ahead-of-time.
 
 - Build by tag, commit id or `anyBranch-SNAPSHOT`.
 
