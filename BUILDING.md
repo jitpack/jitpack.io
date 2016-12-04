@@ -149,10 +149,14 @@ before_install:
 install:
    - echo "Running a custom install command"
    - mvn clean install -DskipTests
+env:
+   MYVAR: "custom environment variable"
 ```
 
 The `install` command is expected to create build artifacts somewhere in the project's directory and
 *also* to copy them to the local Maven repository `~/.m2/repository`.
+
+Custom environment variables can be set using the `env` section as key-value pairs. They will be available to your build on JitPack. 
 
 ## Java version
 
