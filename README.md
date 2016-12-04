@@ -112,9 +112,11 @@ Add dependency information in your README. Tell the world where to get your libr
 
 # Features #
 
-- Javadoc publishing. If the project produces a javadoc.jar then you can browse the javadoc files directly at:
-    - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/`   
-    - See the example projects on how to configure your build file. [Android example](https://github.com/jitpack/android-example/blob/master/library/build.gradle)
+- Javadoc publishing. See the example projects on how to configure your build file ([Android example](https://github.com/jitpack/android-example/blob/master/library/build.gradle)). 
+If the project produces a javadoc.jar then you can browse the javadoc files directly at: 
+```
+https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/
+```
 
 - [Private repositories](https://jitpack.io/private)
 
@@ -161,19 +163,31 @@ git.jitpack.io.		600	IN	TXT	"https://github.com/jitpack"
 
 Add this line to your README.md to show a status badge with the latest release:
 
-`[![Release](https://jitpack.io/v/User/Repo.svg)](https://jitpack.io/#User/Repo)`
+```
+[![Release](https://jitpack.io/v/User/Repo.svg)]
+(https://jitpack.io/#User/Repo)
+```
+
 
 [![Release](https://jitpack.io/v/jitpack/maven-simple.svg)](https://jitpack.io/#jitpack/maven-simple)
 
+
 If you are using a custom domain or BitBucket then use:
 
-`[![Release](https://jitpack.io/v/com.example/Repo.svg)](https://jitpack.io/#com.example/Repo)`
+```
+[![Release](https://jitpack.io/v/com.example/Repo.svg)]
+(https://jitpack.io/#com.example/Repo)
 
-`[![Release](https://jitpack.io/v/org.bitbucket.User/Repo.svg)](https://jitpack.io/#org.bitbucket.User/Repo)`
+
+[![Release](https://jitpack.io/v/org.bitbucket.User/Repo.svg)]
+(https://jitpack.io/#org.bitbucket.User/Repo)
+```
 
 Or if you prefer the flat-squared style:
 
-`https://jitpack.io/v/User/Repo.svg?style=flat-square`
+```
+https://jitpack.io/v/User/Repo.svg?style=flat-square
+```
 
 [![Release](https://jitpack.io/v/jitpack/maven-simple.svg?style=flat-square)](https://jitpack.io/#jitpack/maven-simple)
 
