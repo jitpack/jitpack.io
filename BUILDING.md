@@ -140,6 +140,14 @@ Each build will have these environment variables:
 
 - `GIT_DESCRIBE=<output of git describe command>`
 
+And the following project specific environment variables:
+
+- `GROUP=<group id>` # com.github.USER
+
+- `ARTIFACT=<artifact id>` # Git Repository name 
+
+- `VERSION=<version being built>` # A tag or commit
+
 # Build customization
 
 You can create a `jitpack.yml` file in the root of your repository and override the build commands:
