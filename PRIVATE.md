@@ -59,7 +59,9 @@ Add the token to project.clj as the username:
   :repositories [["jitpack" {:url"https://jitpack.io" :username "AUTHENTICATION_TOKEN" :password "."  } ]]
 ```
 
-### Bitbucket
+## Bitbucket
+
+To use JitPack with Bitbucket private repositories you need an API key from https://bitbucket.org.
 
 Create a Team in Bitbucket and generate an API key under the team's [admin page](img/bitbucket-apikey.png). 
 Use the API key as JitPack's authentication token.
