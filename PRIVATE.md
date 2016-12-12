@@ -62,7 +62,13 @@ Add the token to project.clj as the username:
 ### Bitbucket
 
 Create a Team in Bitbucket and generate an API key under the team's [admin page](img/bitbucket-apikey.png). 
-Use the API key as an authentication token.
+Use the API key as JitPack's authentication token.
+
+In order to Look Up and manage Bitbucket repositories you should add the API key to your JitPack account:
+
+1. Sign In on https://jitpack.io
+2. Click on your username (https://jitpack.io/w/user.html)
+3. Enter the Api Key
 
 
 ## Usage
