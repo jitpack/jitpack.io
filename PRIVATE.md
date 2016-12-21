@@ -98,9 +98,11 @@ dependencies {
 }
 ```
 
-## Private dependencies
+## Private and transitive dependencies
 
 Your private GitHub projects can have dependencies on other GitHub projects. JitPack supports resolution of these dependencies seamlessly and there's no extra configuration required. The token you use to build the first project will also be used to build it's dependencies.
+
+For transitive dependencies to work in Gradle the authentication token property needs to be called `authToken` in all projects.
 
 ## Permissions
 
