@@ -54,7 +54,7 @@ to build and publish Maven projects. If your project requires a specific Maven v
   
 # Multi-module projects
 
-If the project builds multiple modules JitPack will append the repository name to the artifact's groupId and the module's name will stay in the artifactId. It will also generate a module that includes all of repository's modules as dependencies. That way if you don't know which module you want you can get all of them by adding just a single dependency to your build file.
+If the project builds multiple modules JitPack publish all of them. It will also generate a module that includes all of repository's modules as dependencies. That way if you don't know which module you want you can get all of them by adding just a single dependency to your build file.
 
 To get individual artifacts of multi-module builds use `com.github.User.Repo` as group Id and `ModuleName` as the artifact Id.
 
@@ -72,11 +72,14 @@ or in Maven:
 	<version>Tag</version> 
 </dependency>
 ``` 
+**Tip**: You can see a list of modules on [jitpack.io](https://jitpack.io) if you Look Up your repository.
 
 To get all modules of a project use the standard syntax:
 ```gradle
 compile 'com.github.User:Repo:Tag'
 ```
+**Note**: 
+If your project only has a *single* module then the dependency for that module is just `com.github.User:Repo:Tag`.
 
 Examples:
 
