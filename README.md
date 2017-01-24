@@ -91,7 +91,7 @@ As long as there's a build file in your repository and it can install your libra
 
 *Tip:* You can try out your code before a release by using the commit hash as the version.
 
-** Some extras to consider **
+**Some extras to consider**
 
 Add dependency information in your README. Tell the world where to get your library:
 
