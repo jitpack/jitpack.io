@@ -32,6 +32,10 @@ Example: https://jitpack.io/#io.jitpack/gradle-simple
 
 Yes. Tag folders such as `feature/abc` are supported. Set the dependency version as `feature~abc`.
 
+**Can I use branches with slashes in them?**
+
+Yes. Branch names such as `branch/abc` are supported. Set the dependency version as `branch~abc`.
+
 **Will my builds be reproducible?**
 
 Absolutely. Once JitPack builds a project it keeps the build artifacts (jar, aar, ... files) and continues to serve those for all subsequent requests.
