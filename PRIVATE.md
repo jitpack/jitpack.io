@@ -14,12 +14,23 @@ To start using private repositories you will first need to grant JitPack access.
 
 1. Click Authorize to get your personal authentication token. Each member of your team needs to get their own token.
 
-2. Order your JitPack Account [here](https://jitpack.io/private#subscribe). 
-
-3. Add the token to $HOME/.gradle/gradle.properties:
+2. Add the token to $HOME/.gradle/gradle.properties:
     - `authToken=AUTHENTICATION_TOKEN`
+    
+    - Then use authToken as the username in your build.gradle:
+    
+```gradle
+ repositories {
+        maven {
+            url "https://jitpack.io"
+            credentials { username authToken }
+        }
+ }
+ ```
 	
-    - For Maven add the token to 	$HOME/.m2/settings.xml :
+### Maven setup
+
+For Maven add the token to $HOME/.m2/settings.xml :
 
 ```xml
 <settings>
