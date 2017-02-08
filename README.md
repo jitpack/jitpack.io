@@ -2,17 +2,17 @@ JitPack.io
 =====
 JitPack is a novel package repository for JVM and Android projects. It builds Git projects on demand and provides you with ready-to-use artifacts (jar, aar).
 
-If you want your library to be available to the world there is no need to go through project build and upload steps. All you need to do is push your project to GitHub and JitPack will take care of the rest. That’s really it! Need help setting up a repo? Come to  [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jitpack/jitpack.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+If you want your library to be available to the world, there is no need to go through project build and upload steps. All you need to do is push your project to GitHub and JitPack will take care of the rest. That’s really it! Need help setting up a repo? Come to  [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/jitpack/jitpack.io?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-In case your project is already on GitHub JitPack makes sure it can be built by anyone. Want to use a GitHub library in your project? Follow the simple steps explained in the ‘Building with Jitpack’ section.
+In case your project is already on GitHub, JitPack makes sure it can be built by anyone. Want to use a GitHub library in your project? Follow the simple steps explained in the ‘Building with Jitpack’ section.
 
 
-For issues and enhancements please use the [JitPack GitHub repository](https://github.com/jitpack/jitpack.io/). The repository contains this documentation and contributions are welcome there as well.
+For issues and enhancements, please use the [JitPack GitHub repository](https://github.com/jitpack/jitpack.io/). The repository contains this documentation and contributions are welcome there as well.
 
 Building with JitPack
 =====
 
-If you are using Gradle to get a GitHub project into your build you will need to:
+If you are using Gradle to get a GitHub project into your build, you will need to:
 
 **Step 1.** Add the JitPack maven repository to the list of repositories:
 
@@ -61,7 +61,7 @@ For example:
 
 Adding `-SNAPSHOT` will build the latest commit on the master branch.
 
-Gradle can cache the SNAPSHOT builds. You could add the following configuration in your build.gradle file in order to ensure Gradle always picks up the 'freshest' version of the build.
+Gradle can cache the SNAPSHOT builds. You could add the following configuration in your build.gradle file in order to ensure Gradle always picks up the 'freshest' version of the build:
 
 ```gradle
 configurations.all {
@@ -71,11 +71,11 @@ configurations.all {
 
 Or you could also run Gradle from the command line with the `--refresh-dependencies` flag. See the [Gradle documentation](https://docs.gradle.org/2.5/userguide/dependency_management.html#changing-module-cache-control) for more information on how to configure caching for *changing* dependencies.
 
-*Note* If using Android Studio don't forget to press File->Synchronize after updating to a newer snapshot.
+*Note* If using Android Studio, don't forget to press File->Synchronize after updating to a newer snapshot.
 
-See also the [Guide to building](BUILDING.md) for more details and for instructions on building multi-module projects.
+Also see the [Guide to building](BUILDING.md) for more details and instructions on building multi-module projects.
 
-If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software) you can get the latest snapshot build. In this case use the short commit id as the version. You can also place tags on other branches and then build using those tags.
+If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software), you can get the latest snapshot build. In this case, use the short commit id as the version. You can also place tags on other branches and then build using those tags.
 
 *Tip:* You can also automate GitHub releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
 
@@ -122,7 +122,7 @@ https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/
 
 - Dynamic versions. You can use Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built. JitPack periodically checks for new releases and builds them ahead-of-time.
 
-- Build by tag, commit id or `anyBranch-SNAPSHOT`.
+- Build by tag, commit id, or `anyBranch-SNAPSHOT`.
 
 - You can also use your own domain name for groupId
 
@@ -134,12 +134,12 @@ JitPack also works with other Git hosting providers. The only difference is the 
 
  - GitLab: *com.gitlab*.Username:Repo:Tag
 
-Too see an example head to https://jitpack.io and 'Look Up' a Git repository by url.
+To see an example, head to https://jitpack.io and 'Look Up' a Git repository by url.
 
 ## Custom domain name ##
 
 If you want to use your own domain name as the groupId instead of com.github.yourcompany, you can.
-We support mapping your domain name to your GitHub organization. Then instead of 'com.github.yourcompany' groupId you can use 'com.yourcompany' while the name of the project and version remains the same.
+We support mapping your domain name to your GitHub organization. Then, instead of 'com.github.yourcompany' groupId, you can use 'com.yourcompany' while the name of the project and version remains the same.
 
 To enable your own domain name:  
 
@@ -151,7 +151,7 @@ To enable your own domain name:
 
 Example: [https://jitpack.io/#io.jitpack/gradle-simple](https://jitpack.io/#io.jitpack/gradle-simple)
 
-To check that the DNS TXT record was added run the command `dig txt git.yourcompany.com`. For example:
+To check that the DNS TXT record was added, run the command `dig txt git.yourcompany.com`. For example:
 ```
 ~$ dig txt git.jitpack.io
 ...
@@ -172,7 +172,7 @@ Add this line to your README.md to show a status badge with the latest release:
 [![Release](https://jitpack.io/v/jitpack/maven-simple.svg)](https://jitpack.io/#jitpack/maven-simple)
 
 
-If you are using a custom domain or BitBucket then use:
+If you are using a custom domain or BitBucket, use:
 
 ```
 [![Release](https://jitpack.io/v/com.example/Repo.svg)]
@@ -183,7 +183,7 @@ If you are using a custom domain or BitBucket then use:
 (https://jitpack.io/#org.bitbucket.User/Repo)
 ```
 
-Or if you prefer the flat-squared style:
+Or, if you prefer the flat-squared style:
 
 ```
 https://jitpack.io/v/User/Repo.svg?style=flat-square
