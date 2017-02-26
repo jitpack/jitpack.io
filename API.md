@@ -65,3 +65,23 @@ API for private repositories uses basic authentication using your authentication
 ```
 curl -uTOKEN: https://jitpack.io/api/builds/:groupId/:artifactId/:tag  
 ```
+
+## Search
+
+Search for releases based on project name.
+
+**GET** `/search?q=text`
+
+will find all projects that contain the given text in their name or groupId. 
+
+The result consists of project name and a list of releases.
+For example:
+```
+{
+  "com.github.jitpack:gradle-simple" : [ "1.0.4", "1.0.3" ],
+  "com.github.jitpack:maven-simple" : [ "1.0", "0.1" ],
+  "com.github.jitpack:android-example" : [ "1.0.5.rc1", "v1.0.4" ],
+...
+```
+
+Up to 50 results are returned by default and can be tweaked using `&limit=10` parameter.
