@@ -85,3 +85,6 @@ For example:
 ```
 
 Up to 50 results are returned by default and can be tweaked using `&limit=10` parameter.
+
+To find a project by artifactId only use `q=:gradle-simple`.
+To find a project by groupId only use `q=com.github.jitpack:`.
