@@ -72,17 +72,15 @@ Add the token to project.clj as the username:
 
 ## Bitbucket
 
-To use JitPack with Bitbucket private repositories you need an API key from https://bitbucket.org.
+To use JitPack with Bitbucket private repositories you need to create an [App Password](https://blog.bitbucket.org/2016/06/06/app-passwords-bitbucket-cloud/). The only permission that the password requires is **Repositories: read**.
 
-Create a Team in Bitbucket and generate an API key under the team's [admin page](img/bitbucket-apikey.png). 
-Use the API key as JitPack's authentication token.
-
-In order to Look Up and manage Bitbucket repositories you should add the API key to your JitPack account:
+In order to Look Up and manage Bitbucket repositories you should add the App Password to your JitPack account:
 
 1. Sign In on https://jitpack.io
 2. Click on your username (https://jitpack.io/w/user.html)
-3. Enter the Api Key
+3. Enter your Bibucket user and App Password
 
+Your user page also shows your access token that you should use in your build tool (Gradle/Maven/Sbt).
 
 ## Usage
 
