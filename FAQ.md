@@ -16,6 +16,10 @@ You can also customize how often you want Gradle to check for new snapshots - se
 
 Yes. See [private repositories](https://jitpack.io/private)
 
+**Can I keep my source code private but make the library public?**
+
+Yes. See [Artifact Sharing](https://jitpack.io/docs/PRIVATE/#artifact-sharing)
+
 **Can I use my own domain name?**
 
 Yes. We support mapping your domain name to your GitHub organization. Then instead of 'com.github.yourcompany' groupId you can use 'com.yourcompany'. 
@@ -46,7 +50,7 @@ Note that -SNAPSHOT version will always provide the latest build therefore its o
 
 **How are the artifacts you build licensed?**
 
-Build artifacts licenses are specified in the originating source code repositories. 
+Build artifact licenses are specified in the originating source code repositories. 
 
 **Is this like depending on source code repositories in other languages?**
 
