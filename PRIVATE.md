@@ -129,9 +129,10 @@ In some cases you want to distribute your project publicly while keeping the sou
 
 1. Sign In on JitPack.io homepage
 2. Look up your private repository
-3. Click on the Lock icon to make the builds public:
+3. Click on the Settings icon 
+4. Click on the Lock icon to make the builds public:
 
-   ![Private ](img/locked.png)
+   ![Private ](img/artifact-sharing.png)
 
 Once the Lock icon turns to unlocked the project's build artifacts become public. That means your users will be able to install your library without needing an authentication token.
 
