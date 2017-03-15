@@ -86,3 +86,8 @@ where 'library' is the name of your library module.
 
 By default the android-maven plugin generates an 'aar' file from your library. If you want to have a 'jar' instead take a look at the [Example](https://github.com/jitpack/android-example) project's library/build.gradle.
 
+# Tutorials
+
+ - [How to create an Android Gradle library (with video)](https://medium.com/@levibostian/how-to-create-an-android-gradle-library-cf2792b39be#.nkeke59zp) by Levi Bostian
+ - [Publish an Android Library](https://medium.com/@ome450901/publish-an-android-library-by-jitpack-a0342684cbd0#.44sbcommx)
+ 
