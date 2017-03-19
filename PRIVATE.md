@@ -30,7 +30,9 @@ To start using private repositories you will first need to grant JitPack access.
 	
 ### Maven setup
 
-For Maven add the token to $HOME/.m2/settings.xml :
+JitPack provides a private Maven repository that you can access with an authentication token.
+
+Add the token to $HOME/.m2/settings.xml file:
 
 ```xml
 <settings>
