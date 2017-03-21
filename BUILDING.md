@@ -206,13 +206,14 @@ The easiest way is to open a GitHub issues or come chat on https://gitter.im/jit
 
 ## Building ahead of time
 
-You can also build snapshots on each commit if you add a GitHub Webhooks. For example by calling this kind of url on every commit: 
-`https://jitpack.io/com/github/User/Repo/-SNAPSHOT/build.log`
+You can also build snapshots on each commit if you add GitHub Webhooks. 
 
 To add, head to repository Settings -> Webhooks & Services -> Add webhook.
 
-For private repositories you will need to pass the authentication token:
-`https://jitpack.io/com/github/User/Repo/-SNAPSHOT/build.log?access_token=AUTHENTICATION_TOKEN`
+Webhook URL:
+`https://jitpack.io/api/webhooks`
+
+The webhook will trigger a build for branches that you have previously used with JitPack. So make sure you have requested `master-SNAPSHOT` from JitPack before adding a webhook.
 
 ## Rebuilding
 
