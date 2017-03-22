@@ -4,25 +4,28 @@ In order to publish your library on JitPack you just need a working build file i
 
 JitPack currently can build **Gradle**, **Maven**, **Sbt** and **Leiningen** projects. Let us know if you want to use it with other build tools.
 
-If the project has a build.gradle file then it will be built using Gradle otherwise JitPack will look for a pom.xml, build.sbt or project.clj file. The build.gradle file can also be located in a subfolder.
+If the project has a `build.gradle` file then it will be built using Gradle otherwise JitPack will look for a `pom.xml`, `build.sbt` or `project.clj` file. The `build.gradle`file can also be located in a subfolder.
 
 ## Gradle projects
 
-Projects using Gradle need to have either the [maven](http://gradle.org/docs/current/userguide/maven_plugin.html) or [maven-publishing](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this to your build file:
+Projects using Gradle need to have either the [`maven`](http://gradle.org/docs/current/userguide/maven_plugin.html) or [`maven-publishing`](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this to your build file:
 
 ```gradle
-    apply plugin: 'maven'
+apply plugin: 'maven'
     
-    group = 'com.github.YourUsername'
+group = 'com.github.YourUsername'
 ```
 
 then JitPack will run:
 
-```gradle
-    ./gradlew install
+```sh
+./gradlew install
 ```
 
-to install the jar and pom file in it's local maven repository. With maven-publishing plugin it will run `./gradlew build publishToMavenLocal`. 
+to install the jar and pom file in it's local maven repository. With `maven-publishing` plugin it will run
+```sh
+./gradlew build publishToMavenLocal
+```
 
 Note that if your project isn't using a Gradle wrapper JitPack will build it with a recent version of Gradle. Therefore it is recommended to use the wrapper.
 
@@ -39,12 +42,14 @@ See the [Guide to publishing Android libraries](ANDROID.md) with Gradle
 ## Maven projects
 
 JitPack will run: 
-
-    mvn install -DskipTests
+```sh
+mvn install -DskipTests
+```
     
-to build and publish Maven projects. If your project requires a specific Maven version then you can use the [Maven Wrapper](https://github.com/takari/maven-wrapper). In that case JitPack will run: 
-
-    ./mvnw install -DskipTests
+to build and publish Maven projects. If your project requires a specific Maven version then you can use the [Maven Wrapper](https://github.com/takari/maven-wrapper). In that case JitPack will run:
+```sh
+./mvnw install -DskipTests
+```
 
 ### Example projects
 
@@ -67,9 +72,9 @@ or in Maven:
 
 ```xml
 <dependency> 
-	<groupId>com.github.User.Repo</groupId> 
-	<artifactId>Module</artifactId> 
-	<version>Tag</version> 
+    <groupId>com.github.User.Repo</groupId> 
+    <artifactId>Module</artifactId> 
+    <version>Tag</version> 
 </dependency>
 ``` 
 **Tip**: You can see a list of modules on [jitpack.io](https://jitpack.io) if you Look Up your repository.
@@ -91,8 +96,9 @@ Examples:
 
 JitPack can build sbt projects and also provide dependencies to sbt. 
 When building an Sbt project JitPack will run:
-
-    sbt publishM2
+```sh
+sbt publishM2
+```
 
 To use JitPack repository from sbt add this to build.sbt:
 ```sbt
@@ -112,8 +118,9 @@ which will build the dependency with your current Scala version by calling `sbt 
 ## Leiningen projects
 
 When building a Leiningen project JitPack will run:
-
-    lein do clean, install
+```
+lein do clean, install
+```
     
 To use JitPack from Leiningen add the repository to your project.clj:
 ```clojure    
@@ -121,7 +128,6 @@ To use JitPack from Leiningen add the repository to your project.clj:
 ```
 
 and then the dependency:
-
 ```clojure
 :dependencies [[com.github.User/Repo "Tag"]]
 ```
@@ -223,5 +229,5 @@ You may need to run gradle with `--refresh-dependencies` flag in order to re-fet
 
 ## Clean gradle cache
 
-To clean the Gradle cache delete the HOME_DIR/.gradle/caches directory.
+To clean the Gradle cache delete the `HOME_DIR/.gradle/caches` directory.
 
