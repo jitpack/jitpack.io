@@ -89,6 +89,10 @@ If you are running Gradle on Linux you might get the `peer not authenticated` er
  - Upgrade to Gradle 2.11
  - Run Gradle with Java 8. The project itself doesn't need to use Java 8.
 
+**Where do I find invoices for my JitPack Subscription?**
+
+Invoices are available on your user page - Sign In and click on your username (https://jitpack.io/w/user).
+
 **Other questions**
 
 Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack-io
