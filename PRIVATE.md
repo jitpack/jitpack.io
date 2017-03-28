@@ -74,15 +74,27 @@ Add the token to project.clj as the username:
 
 ## Bitbucket
 
-To use JitPack with Bitbucket private repositories you need to create an [App Password](https://blog.bitbucket.org/2016/06/06/app-passwords-bitbucket-cloud/). The only permission that the password requires is **Repositories: read**.
+To use JitPack with Bitbucket private repositories you need to create an [App Password](https://blog.bitbucket.org/2016/06/06/app-passwords-bitbucket-cloud/). The only scope that the password requires is **Repositories: read**.
 
 In order to Look Up and manage Bitbucket repositories you should add the App Password to your JitPack account:
 
 1. Sign In on https://jitpack.io
-2. Click on your username (https://jitpack.io/w/user.html)
+2. Click on your username (https://jitpack.io/w/user)
 3. Enter your Bibucket user and App Password
 
 Your user page also shows your access token that you should use in your build tool (Gradle/Maven/Sbt).
+
+## GitLab
+
+To use JitPack with GitLab private repositories you need to create a [Personal Access Token](https://docs.gitlab.com/ee/api/README.html#personal-access-tokens). The only permission that the password requires is **api**.
+
+In order to Look Up and manage GitLab repositories you should add the Access Token to your JitPack account:
+
+1. Sign In on https://jitpack.io
+2. Click on your username (https://jitpack.io/w/user)
+3. Enter your GitLab Access Token
+
+Your user page also shows your JitPack access token that you should use in your build tool (Gradle/Maven/Sbt).
 
 ## Usage
 
