@@ -74,7 +74,7 @@ Add the token to project.clj as the username:
 
 ## Bitbucket
 
-To use JitPack with Bitbucket private repositories you need to create an [App Password](https://blog.bitbucket.org/2016/06/06/app-passwords-bitbucket-cloud/). The only scope that the password requires is **Repositories: read**.
+To use JitPack with Bitbucket private repositories you need to create an [App Password](https://blog.bitbucket.org/2016/06/06/app-passwords-bitbucket-cloud/). The minimum scope that the password requires is **Repositories: read**. If you'd like to use Artifact Sharing then the required scope is **Repositories: write**.
 
 In order to Look Up and manage Bitbucket repositories you should add the App Password to your JitPack account:
 
