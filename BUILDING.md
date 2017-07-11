@@ -219,6 +219,9 @@ To add, head to repository Settings -> Webhooks & Services -> Add webhook.
 Webhook URL:
 `https://jitpack.io/api/webhooks`
 
+Content type:
+`application/json`
+
 The webhook will trigger a build for branches that you have previously used with JitPack. So make sure you have requested `master-SNAPSHOT` from JitPack before adding a webhook.
 
 ## Rebuilding
