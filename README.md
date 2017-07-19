@@ -105,8 +105,15 @@ It's easy to look up the dependency information on https://jitpack.io. Just past
 
 Other Features
 ======
-- Javadoc publishing. If the project produces a javadoc.jar then you can browse the javadoc files directly at: 
-    - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/`   
+- Javadoc publishing. For a single module project, if it produces a javadoc.jar then you can browse the javadoc files directly at: 
+    - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/` 
+
+- For a multi module project, the artifacts are published under `com.github.USER.REPO:MODULE:VERSION`, where `MODULE` is the artifact id of the module (not necessarily the same as the directory it lives in)
+- Javadocs for a multi-module project follow the same convention, i.e.
+
+    - `https://jitpack.io/com/github/USER/REPO/MODULE/VERSION/javadoc/` 
+
+- Aggregated javadocs for a multi-module project may be available if the top level aggregates them into a jar and publishes it. The module name in this case is the artifact id of the top level module.
 - Private repositories https://jitpack.io/private
 - Dynamic versions. You can youse Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built.
 - Build by tag and by commit id.
