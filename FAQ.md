@@ -86,12 +86,13 @@ JitPack is a public maven repository and serves maven artifacts. In that sense i
 **How do I solve `peer not authenticated` error in Gradle?**
 
 If you are running Gradle on Linux you might get the `peer not authenticated` error. There are at least two ways to solve this:
- - Upgrade to Gradle 2.11
+ - Upgrade to Gradle 2.11 or newer
  - Run Gradle with Java 8. The project itself doesn't need to use Java 8.
 
 **Where do I find invoices for my JitPack Subscription?**
 
 Invoices are available on your user page - Sign In and click on your username (https://jitpack.io/w/user).
+You can also receive invoices by email if you add an email address on your user page. 
 
 **Other questions**
 
