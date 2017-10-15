@@ -173,7 +173,11 @@ env:
 The `install` command is expected to create build artifacts somewhere in the project's directory and
 *also* to copy them to the local Maven repository `~/.m2/repository`.
 
-Custom environment variables can be set using the `env` section as key-value pairs. They will be available to your build on JitPack. 
+## Environment variables
+
+Custom environment variables can be set using the `env` section as key-value pairs. They will be available to your build on JitPack.
+
+Additionally, you can configure environment variables in the Web UI on https://jitpack.io. Look up your repository and click settings. This is useful if you don't want to store environment variables in git.
 
 ## Java version
 
