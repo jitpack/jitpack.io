@@ -18,4 +18,4 @@ New feature suggestions for https://jitpack.io are very welcome
 
 # Pull-requests
 
-Pull requests for any improvements are appreciated
+Pull requests for any improvements are appreciated!
