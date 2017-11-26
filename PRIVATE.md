@@ -190,3 +190,6 @@ To check that the DNS TXT record was added run the command `dig txt git.yourcomp
 ;; ANSWER SECTION:
 git.jitpack.io.		600	IN	TXT	"https://github.com/jitpack"
 ```
+
+The setup is similar for self-hosted GitLab servers but instead of GitHub point the TXT record to your server. For example, if the address of your GitLab server is https://gitlab.yourcompany.com then set the TXT record the following way:
+ - git.yourcompany.com points to https://gitlab.yourcompany.com
