@@ -86,7 +86,7 @@ Your user page also shows your access token that you should use in your build to
 
 ## GitLab
 
-To use JitPack with GitLab private repositories you need to create a [Personal Access Token](https://docs.gitlab.com/ee/api/README.html#personal-access-tokens). The only permission that the password requires is **api**.
+To use JitPack with GitLab.com private repositories you need to create a [Personal Access Token](https://docs.gitlab.com/ee/api/README.html#personal-access-tokens). The only permission that the password requires is **api**.
 
 In order to Look Up and manage GitLab repositories you should add the Access Token to your JitPack account:
 
@@ -95,6 +95,8 @@ In order to Look Up and manage GitLab repositories you should add the Access Tok
 3. Enter your GitLab Access Token
 
 Your user page also shows your JitPack access token that you should use in your build tool (Gradle/Maven/Sbt).
+
+If you are using a self-hosted instance of GitLab then you need to setup a **Custom Domain** (see below).
 
 ## Usage
 
