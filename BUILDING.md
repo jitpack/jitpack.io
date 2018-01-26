@@ -46,7 +46,10 @@ JitPack will run:
 mvn install -DskipTests
 ```
     
-to build and publish Maven projects. If your project requires a specific Maven version then you can use the [Maven Wrapper](https://github.com/takari/maven-wrapper). In that case JitPack will run:
+to build and publish Maven projects. 
+Your Maven group id is harvested from the top-level pom and then used to locate the installed artifacts in `~/.m2/repository`. Binary jars, source jars and javadoc can all be picked up from there via the JitPack virtual repository.
+
+If your project requires a specific Maven version then you can use the [Maven Wrapper](https://github.com/takari/maven-wrapper). In that case JitPack will run:
 ```sh
 ./mvnw install -DskipTests
 ```
@@ -91,6 +94,33 @@ Examples:
  - Multiple Gradle modules - https://github.com/jitpack/gradle-modular
 
  - Multiple Maven modules - https://github.com/jitpack/maven-modular
+ 
+ N.B. in a Maven multi-module build, the top level is always a pom (not a jar), but it *can* still be used to aggregate javadocs, as long as they are published as a jar file when the project is built. You can configure the javadoc plugin at the top level like this, and the javadocs will be published with an artifact id the same as the top level pom:
+ 
+ ```xml
+<build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <inherited>false</inherited>
+                <configuration>
+                    <aggregate>true</aggregate>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>aggregate</id>
+                        <goals>
+                            <goal>aggregate-jar</goal>
+                        </goals>
+                        <phase>package</phase>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+</build>
+```
 
 ## Sbt projects
 
