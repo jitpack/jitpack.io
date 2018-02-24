@@ -207,7 +207,7 @@ The `install` command is expected to create build artifacts somewhere in the pro
 
 Custom environment variables can be set using the `env` section as key-value pairs. They will be available to your build on JitPack.
 
-Additionally, you can configure environment variables in the Web UI on https://jitpack.io. Look up your repository and click settings. This is useful if you don't want to store environment variables in git.
+Additionally, you can configure environment variables in the Web UI on https://jitpack.io if you have a private repository. Look up your repository and click settings. This is useful if you don't want to store environment variables in git.
 
 ## Java version
 
