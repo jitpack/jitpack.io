@@ -191,5 +191,15 @@ To check that the DNS TXT record was added run the command `dig txt git.yourcomp
 git.jitpack.io.		600	IN	TXT	"https://github.com/jitpack"
 ```
 
-The setup is similar for self-hosted GitLab servers but instead of GitHub point the TXT record to your server. For example, if the address of your GitLab server is https://gitlab.yourcompany.com then set the TXT record the following way:
+## Self hosted git
+
+You can also use JitPack with a self-hosted Git server like GitLab. In that case, go to your user page and enter:
+- Git server: https://gitlab.yourcompany.com
+- Token: Personal Access Token (if using private repositories)
+
+After that you'll be able to access your libraries on the main JitPack page with:
+- com.yourcompany.gitlab.USER/REPO
+
+If you'd like to use a different groupId (as in com.yourcompany.USER/REPO) then you'll need to setup a custom domain as described above. The only difference is that instead of GitHub point the TXT record to your git server. For example, if the address of your GitLab is https://gitlab.yourcompany.com then set the TXT record the following way:
  - git.yourcompany.com points to https://gitlab.yourcompany.com
+ 
