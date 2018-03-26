@@ -194,12 +194,15 @@ git.jitpack.io.		600	IN	TXT	"https://github.com/jitpack"
 ## Self hosted git
 
 You can also use JitPack with a self-hosted Git server like GitLab. In that case, go to your user page and enter:
-- Git server: https://gitlab.yourcompany.com
-- Token: Personal Access Token (if using private repositories)
+
+ - Git server: https://gitlab.yourcompany.com
+ - Token: Personal Access Token (if using private repositories)
 
 After that you'll be able to access your libraries on the main JitPack page with:
+
 - com.yourcompany.gitlab.USER/REPO
 
 If you'd like to use a different groupId (as in com.yourcompany.USER/REPO) then you'll need to setup a custom domain as described above. The only difference is that instead of GitHub point the TXT record to your git server. For example, if the address of your GitLab is https://gitlab.yourcompany.com then set the TXT record the following way:
+
  - git.yourcompany.com points to https://gitlab.yourcompany.com
  

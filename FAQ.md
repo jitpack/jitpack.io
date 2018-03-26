@@ -32,6 +32,10 @@ Steps:
 
 Example: https://jitpack.io/#io.jitpack/gradle-simple
 
+**Can I use JitPack with my self-hosted GitLab server?**
+
+Yes. Register your server in your [user page](https://jitpack.io/w/user)
+
 **Can I use tag folders?**
 
 Yes. Tag folders such as `feature/abc` are supported. Set the dependency version as `feature~abc`.

@@ -147,6 +147,8 @@ JitPack also works with other Git hosting providers. The only difference is the 
 
 To see an example, head to https://jitpack.io and 'Look Up' a Git repository by url.
 
+Self-hosted Git servers like GitLab are also supported. You can register your server on your [user page](https://jitpack.io/w/user).
+
 ## Custom domain name ##
 
 If you want to use your own domain name as the groupId instead of com.github.yourcompany, you can.
