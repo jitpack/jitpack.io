@@ -94,6 +94,12 @@ If you are running Gradle on Linux you might get the `peer not authenticated` er
 Invoices are available on your user page - Sign In and click on your username (https://jitpack.io/w/user).
 You can also receive invoices by email if you add an email address on your user page. 
 
+**Change my repository to public but still got the message `No access token`**
+
+When JitPack detects a private repository it caches this result for 1 hour. So, after change your repository to public you still need to wait 1 hour to be able to access.
+
+[jitpack.io/issues/986](https://github.com/jitpack/jitpack.io/issues/986#issuecomment-265189883)
+
 **Other questions**
 
 Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack-io
