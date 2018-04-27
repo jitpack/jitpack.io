@@ -69,7 +69,7 @@ To get individual artifacts of multi-module builds use `com.github.User.Repo` as
 Individual module in Gradle:
 
 ```gradle
-compile 'com.github.User.Repo:Module:Tag'
+implementation 'com.github.User.Repo:Module:Tag'
 ```
 or in Maven:
 
@@ -84,7 +84,7 @@ or in Maven:
 
 To get all modules of a project use the standard syntax:
 ```gradle
-compile 'com.github.User:Repo:Tag'
+implementation 'com.github.User:Repo:Tag'
 ```
 **Note**: 
 If your project only has a *single* module then the dependency for that module is just `com.github.User:Repo:Tag`.
@@ -211,7 +211,7 @@ Additionally, you can configure environment variables in the Web UI on https://j
 
 ## Java version
 
-JitPack will compile projects using Oracle Java 8. See the example projects on how to set a different target version in your build file. 
+JitPack will compile projects using OpenJDK Java 8. See the example projects on how to set a different target version in your build file. 
 
 Maven projects that specify a target version in their pom will be built with that target version.
 
@@ -220,7 +220,7 @@ If your project uses Travis or Circle CI then JitPack will read the lowest jdk v
 Alternatively create a `jitpack.yml` file in the root of your repository and specify a jdk version:
 ```yml
 jdk:
-  - oraclejdk8
+  - openjdk9
 ```
 
 # Troubleshooting
