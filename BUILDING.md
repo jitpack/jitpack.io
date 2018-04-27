@@ -184,13 +184,13 @@ And the following project specific environment variables:
 
 - `VERSION=<version being built>` # A tag or commit
 
-# Build customization
+# Custom commands
 
 You can create a `jitpack.yml` file in the root of your repository and override the build commands:
 
 ```yml
 jdk:
-  - oraclejdk8
+  - openjdk9
 before_install:
    - ./prepareEnvironment.sh
 install:
@@ -222,6 +222,8 @@ Alternatively create a `jitpack.yml` file in the root of your repository and spe
 jdk:
   - openjdk9
 ```
+
+If your project requires a specific Java build then you can use Custom Commands to install it before the build.
 
 # Troubleshooting
 
