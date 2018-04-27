@@ -39,7 +39,7 @@ Gradle example:
         }
    }
    dependencies {
-        compile 'com.github.User:Repo:Version'
+        implementation 'com.github.User:Repo:Version'
    }
 ```
 
@@ -56,7 +56,7 @@ Snapshot versions are useful during development. A snapshot is a version that ha
 For example:
 ```gradle
     // dependency on the latest commit in the master branch
-    compile 'com.github.jitpack:gradle-simple:master-SNAPSHOT'
+    implementation 'com.github.jitpack:gradle-simple:master-SNAPSHOT'
 ```
 
 Adding `-SNAPSHOT` will build the latest commit on the master branch.
@@ -101,7 +101,7 @@ Add dependency information in your README. Tell the world where to get your libr
         maven { url "https://jitpack.io" }
    }
    dependencies {
-         compile 'com.github.jitpack:gradle-simple:1.0'
+         implementation 'com.github.jitpack:gradle-simple:1.0'
    }
 ```  
 
