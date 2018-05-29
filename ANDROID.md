@@ -9,13 +9,13 @@ Builds are run with Java 8 by default but can be configured using a jitpack.yml 
 
 To enable building on JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin. 
 
-If using Gradle *4.1* or later:
+If using Gradle *4.6* or later:
 
 1) In your root build.gradle: 
 ```gradle
 buildscript { 
   dependencies {
-    classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0' // Add this line
+    classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1' // Add this line
 ``` 
 
 2) In your library/build.gradle add:  
