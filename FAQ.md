@@ -106,4 +106,4 @@ When JitPack detects a private repository it caches this result for 1 hour. So, 
 
 **Other questions**
 
-Send them to jitpack at jitpack.io or come to https://gitter.im/jitpack-io
+Contact Support or open an [issue on GitHub](https://github.com/jitpack/jitpack.io/issues)
