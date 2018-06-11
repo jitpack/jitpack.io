@@ -93,6 +93,15 @@ If you are running Gradle on Linux you might get the `peer not authenticated` er
  - Upgrade to Gradle 2.11 or newer
  - Run Gradle with Java 8. The project itself doesn't need to use Java 8.
 
+**How do I resolve `Read timed out` error in Gradle?**
+
+Since version 4.3 Gradle has reduced http timeouts which can cause downloads to time out when JitPack waits for a build to finish.
+To increase timeouts add these settings to your gradle.properties file:
+```
+systemProp.org.gradle.internal.http.connectionTimeout=180000
+systemProp.org.gradle.internal.http.socketTimeout=180000
+```
+
 **Where do I find invoices for my JitPack Subscription?**
 
 Invoices are available on your user page - Sign In and click on your username (https://jitpack.io/w/user).
