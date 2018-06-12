@@ -248,9 +248,9 @@ The easiest way is to open a GitHub issues or come chat on https://gitter.im/jit
 
 ## Building ahead of time
 
-You can also build snapshots on each commit if you add GitHub Webhooks. 
+You can also build snapshots on each commit if you add GitHub or Bitbucket Webhooks. 
 
-To add, head to repository Settings -> Webhooks & Services -> Add webhook.
+On GitGub go to repository Settings -> Webhooks & Services -> Add webhook.
 
 Webhook URL:
 `https://jitpack.io/api/webhooks`
