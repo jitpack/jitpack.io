@@ -80,7 +80,7 @@ In order to Look Up and manage Bitbucket repositories you should add the App Pas
 
 1. Sign In on https://jitpack.io
 2. Click on your username (https://jitpack.io/w/user)
-3. Enter your Bibucket user and App Password
+3. Enter your Bitbucket user and App Password
 
 Your user page also shows your access token that you should use in your build tool (Gradle/Maven/Sbt).
 
