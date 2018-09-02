@@ -177,7 +177,8 @@ git.jitpack.io.		600	IN	TXT	"https://github.com/jitpack"
 Add this line to your README.md to show a status badge with the latest release:
 
 ```
-[[![](https://jitpack.io/v/Jarek901/jitpack.io.svg)](https://jitpack.io/#Jarek901/jitpack.io)
+[[![](https://jitpack.io/v/Jarek901/jitpack.io.svg)]
+(https://jitpack.io/#Jarek901/jitpack.io)
 ```
 
 
@@ -200,8 +201,8 @@ Or, if you prefer the flat-squared style:
 ```
 https://jitpack.io/v/User/Repo.svg?style=flat-square
 ```
+[[![](https://jitpack.io/v/Jarek901/jitpack.io.svg)]
 
-[![Release](https://jitpack.io/v/jitpack/maven-simple.svg?style=flat-square)](https://jitpack.io/#jitpack/maven-simple)
 
 
 FAQ
