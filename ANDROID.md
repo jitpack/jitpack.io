@@ -45,7 +45,7 @@ If install works and you have added a GitHub release it should work jitpack.io
 
 - [Android-Example](https://github.com/jitpack/android-example) 
 
-- [Multiple build variants](https://github.com/jitpack-io/android-jitpack-library-example)
+- [Multiple build variants](https://github.com/jitpack-io/multi-flavor-lib-demo)
 
 ## Installing
 
