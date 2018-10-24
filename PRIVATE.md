@@ -143,7 +143,7 @@ There are two ways to share your build artifacts - public and private.
 
 In some cases you want to distribute your project publicly while keeping the source private. In this case:
 
-1. Sign In on JitPack.io homepage
+1. Sign In with a user that has push permissions
 2. Look up your private repository
 3. Click on the Settings icon 
 4. Click on the Lock icon to make the builds public:
@@ -159,7 +159,7 @@ You can also add additional collaborators on JitPack.io that will have read acce
 
 To add collaborators:
 
-1. Sign In on JitPack.io homepage
+1. Sign In with a user that has push permissions
 2. Look up your private repository
 3. Click on settings
 4. Add the collaborators GitHub username
