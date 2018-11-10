@@ -144,6 +144,8 @@ JitPack also works with other Git hosting providers. The only difference is the 
  - BitBucket: *org.bitbucket*.Username:Repo:Tag
 
  - GitLab: *com.gitlab*.Username:Repo:Tag
+ 
+ - Gitee: *com.gitee*.Username:Repo:Tag
 
 To see an example, head to https://jitpack.io and 'Look Up' a Git repository by url.
 
