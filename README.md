@@ -112,32 +112,29 @@ Add dependency information in your README. Tell the world where to get your libr
 
 # Features #
 
-- Javadoc publishing. See the example projects on how to configure your build file ([Android example](https://github.com/jitpack/android-example/blob/master/library/build.gradle)). 
-If the project produces a javadoc.jar then you can browse the javadoc files directly at: 
-```
-https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/
-or
-https://jitpack.io/com/github/USER/REPO/latest/javadoc/
-```
+## Javadoc publishing ##
 
-- [Private repositories](https://jitpack.io/private)
-
-
-Other Features
-======
-- Javadoc publishing. For a single module project, if it produces a javadoc.jar then you can browse the javadoc files directly at: 
-    - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/` 
+- For a single module project, if it produces a javadoc.jar then you can browse the javadoc files directly at: 
+    - `https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/` or
+    - `https://jitpack.io/com/github/USER/REPO/latest/javadoc/` (latest release tag)
 
 - For a multi module project, the artifacts are published under `com.github.USER.REPO:MODULE:VERSION`, where `MODULE` is the artifact id of the module (not necessarily the same as the directory it lives in)
+
 - Javadocs for a multi-module project follow the same convention, i.e.
 
     - `https://jitpack.io/com/github/USER/REPO/MODULE/VERSION/javadoc/` 
 
 - Aggregated javadocs for a multi-module project may be available if the top level aggregates them into a jar and publishes it. The module name in this case is the artifact id of the top level module.
-- Private repositories https://jitpack.io/private
+
+- See the example projects on how to configure your build file ([Android example](https://github.com/jitpack/android-example/blob/master/library/build.gradle)). 
+
+## Other features #
+
+- [Private repositories](https://jitpack.io/private)
 - Dynamic versions. You can use Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built. JitPack periodically checks for new releases and builds them ahead-of-time.
 - Build by tag, commit id, or `anyBranch-SNAPSHOT`.
 - You can also use your own domain name for groupId
+- Immutable artifacts. Builds cannot be changed after 7 days
 
 ## Other Git hosts ##
 
