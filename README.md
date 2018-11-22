@@ -116,6 +116,8 @@ Add dependency information in your README. Tell the world where to get your libr
 If the project produces a javadoc.jar then you can browse the javadoc files directly at: 
 ```
 https://jitpack.io/com/github/USER/REPO/VERSION/javadoc/
+or
+https://jitpack.io/com/github/USER/REPO/latest/javadoc/
 ```
 
 - [Private repositories](https://jitpack.io/private)
