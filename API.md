@@ -99,3 +99,7 @@ For example,
 ```
 curl https://jitpack.io/api/stats/com.github.jitpack/gradle-modular
 ```
+
+Get download stats for individual versions
+
+**GET** `/stats/:groupId/:artifactId/:tag`
