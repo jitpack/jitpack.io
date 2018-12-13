@@ -244,7 +244,7 @@ https://jitpack.io/com/github/User/Repo/Tag/
 ```
 
 Although we monitor builds feel free to get in touch any time you face an issue or click the Report button. 
-The easiest way is to open a GitHub issues or come chat on https://gitter.im/jitpack-io
+The easiest way is to open a GitHub issues or send a Support ticket from https://jitpack.io
 
 ## Building ahead of time
 
