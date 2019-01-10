@@ -166,6 +166,12 @@ To add collaborators:
 
 Collaborators will need to sign in on JitPack.io to get their own authentication token. 
 
+### Token based access
+
+You can also generate additional tokens to access build artifacts, for example, if you want to download them from a CI. 
+To generate a new token click 'Generate' in your repository's settings.
+If you Generate a token again then the old one will be invalidated.
+
 ## Custom domain
 
 If your organisation's GitHub url is https://github.com/yourcompany then by default the groupId of your artifacts will be 'com.github.yourcompany'. If you want to use your own domain name as groupId, you can.
