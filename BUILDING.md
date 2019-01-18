@@ -192,10 +192,10 @@ You can create a `jitpack.yml` file in the root of your repository and override 
 jdk:
   - openjdk9
 before_install:
-   - ./prepareEnvironment.sh
+   - ./custom_setup.sh
 install:
    - echo "Running a custom install command"
-   - mvn clean install -DskipTests
+   - ./gradlew clean install -xtests
 env:
    MYVAR: "custom environment variable"
 ```
