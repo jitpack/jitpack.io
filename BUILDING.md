@@ -195,7 +195,7 @@ before_install:
    - ./custom_setup.sh
 install:
    - echo "Running a custom install command"
-   - ./gradlew clean install -xtests
+   - ./gradlew clean install -xtest
 env:
    MYVAR: "custom environment variable"
 ```
