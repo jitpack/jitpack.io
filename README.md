@@ -107,8 +107,6 @@ Add dependency information in your README. Tell the world where to get your libr
 
 - Add sources jar. Creating the sources jar makes it easier for others to use your code and contribute.
 
-- Show up-to-date version in HTML. If your project has a website or GitHub pages then you can display the latest release using [this script](https://gist.github.com/jitpack-io/5bd698d35303b2c370a0)
-
 
 # Features #
 
