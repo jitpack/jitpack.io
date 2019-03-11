@@ -98,6 +98,11 @@ Your user page also shows your JitPack access token that you should use in your 
 
 If you are using a self-hosted instance of GitLab then you need to setup a **Self hosted git** server (see below).
 
+### Subgroups
+
+To build a repository that is in a subgroup you can use a dependency in this form: `com.gitlab.GROUP.SUBGROUP:REPO:VERSION`
+For example: https://jitpack.io/#com.gitlab.jitpack.test/gradle-lib
+
 ## Usage
 
 Once you are set up you can try installing one of your private repositories:
