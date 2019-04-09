@@ -93,6 +93,18 @@ If you are running Gradle on Linux you might get the `peer not authenticated` er
  - Upgrade to Gradle 2.11 or newer
  - Run Gradle with Java 8. The project itself doesn't need to use Java 8.
 
+**Can I publish an existing .jar or .aar file?**
+
+You can but the recommended way is always to build from source.
+
+Sometimes you already have an existing artifact (.aar,.jar) as your dependency. For example, it may be provided by a third party without the source so you can't build it on JitPack.
+
+There are a couple of ways of dealing with this:
+  1. Use Gradle Shadow or Maven Shade plugin to embed the third party library into your own library
+  2. Use custom commands on JitPack to publish the dependency: https://gist.github.com/jitpack-io/f928a858aa5da08ad9d9662f982da983
+  
+With option 2. the third party artifact becomes available as a Gradle/Maven dependency on JitPack.
+
 **How do I resolve `Read timed out` error in Gradle?**
 
 Since version 4.3 Gradle has reduced http timeouts which can cause downloads to time out when JitPack waits for a build to finish.
