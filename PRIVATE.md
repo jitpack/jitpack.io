@@ -12,12 +12,13 @@ Note that your GitHub organization may need to approve JitPack in order to acces
 
 To start using private repositories you will first need to grant JitPack access. Open [https://jitpack.io/private](https://jitpack.io/private#auth) and follow the steps:
 
-1. Click Authorize to get your personal authentication token. Each member of your team needs to get their own token.
+1. Click Authorize to get your personal authentication token. Each member of your team should to get their own token.
 
 2. Add the token to $HOME/.gradle/gradle.properties:
-    - `authToken=AUTHENTICATION_TOKEN`
+
+    `authToken=AUTHENTICATION_TOKEN`
     
-    - Then use authToken as the username in your build.gradle:
+3. Then use authToken as the username in your build.gradle:
     
 ```gradle
  repositories {
@@ -26,8 +27,8 @@ To start using private repositories you will first need to grant JitPack access.
             credentials { username authToken }
         }
  }
- ```
-	
+```
+
 ### Maven setup
 
 JitPack provides a private Maven repository that you can access with an authentication token.
@@ -69,7 +70,7 @@ Note that the `realm` property in the credentials file is case sensitive and nee
 
 Add the token to project.clj as the username:
 ```
-  :repositories [["jitpack" {:url"https://jitpack.io" :username "AUTHENTICATION_TOKEN" :password "."  } ]]
+:repositories [["jitpack" {:url"https://jitpack.io" :username "AUTHENTICATION_TOKEN" :password "."}]]
 ```
 
 ## Bitbucket
@@ -98,7 +99,7 @@ Your user page also shows your JitPack access token that you should use in your 
 
 If you are using a self-hosted instance of GitLab then you need to setup a **Self hosted git** server (see below).
 
-### Subgroups
+#### GitLab Subgroups
 
 To build a repository that is in a subgroup you can use a dependency in this form: `com.gitlab.GROUP.SUBGROUP:REPO:VERSION`
 For example: https://jitpack.io/#com.gitlab.jitpack.test/gradle-lib
