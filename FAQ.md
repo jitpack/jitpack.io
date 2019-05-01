@@ -32,6 +32,21 @@ Steps:
 
 Example: https://jitpack.io/#io.jitpack/gradle-simple
 
+**Why am I getting `failed to resolve` error in Gradle?**
+
+There could could be a number of reasons so we need to find the cause of this error.
+The first thing to check is if the build was successfull by doing a Look Up on https://jitpack.io. 
+
+To get more details run Gradle from command line with `--info --refresh-dependencies` flags.
+The output should contain a line "HTTP Could not get" with the full URL and HTTP Status Code.
+
+Possible reasons:
+1. 404 - File not found. Build failed, tag does not exist or there is no such file in build artifacts.
+2. 401 - Unauthorized. No token was supplied or the token doesn't have access to the Git repository.
+3. 403 - Forbidden. Issue with subscription.
+
+If the error is unclear, feel free to contact Support.
+
 **Can I use JitPack with my self-hosted GitLab server?**
 
 Yes. Register your server in your [user page](https://jitpack.io/w/user)
