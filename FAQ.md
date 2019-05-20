@@ -71,7 +71,7 @@ Note that -SNAPSHOT version will always provide the latest build therefore its o
 
 Build artifact licenses are specified in the originating source code repositories. 
 
-**Is this like depending on source code repositories in other languages?**
+**Is JitPack like depending on source code repositories in other languages?**
 
 Not really. With JitPack you specify which exact version you want and JitPack builds it. The author of the repository controls when to release a new version using GitHub's releases so from a consumer's perspective it's a typical package repository. 
 
@@ -82,6 +82,8 @@ Each project is built in its own Docker container that only has access to the pr
 All communication between our servers is VPN secured and files produced by the build are served over HTTPS (only).
 
 Private repository builds are protected by authentication and require an access token.
+
+If you'd like to report a security issue please contact security@jitpack.io
 
 **Can I rebuild my project?**
 
