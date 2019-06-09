@@ -93,13 +93,13 @@ To find a project by groupId only use `q=com.github.jitpack:`.
 
 See weekly and monthly download stats
 
-**GET** `/stats/:groupId/:artifactId`
+**GET** `/downloads/:groupId/:artifactId`
 
 For example, 
 ```
-curl https://jitpack.io/api/stats/com.github.jitpack/gradle-modular
+curl https://jitpack.io/api/downloads/com.github.jitpack/gradle-modular
 ```
 
 Get download stats for individual versions
 
-**GET** `/stats/:groupId/:artifactId/:tag`
+**GET** `/downloads/:groupId/:artifactId/:tag`
