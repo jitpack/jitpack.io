@@ -89,7 +89,7 @@ Up to 50 results are returned by default and can be tweaked using `&limit=10` pa
 To find a project by artifactId only use `q=:gradle-simple`.
 To find a project by groupId only use `q=com.github.jitpack:`.
 
-## Downloads
+## Download Statistics
 
 See weekly and monthly download stats
 
@@ -103,3 +103,4 @@ curl https://jitpack.io/api/downloads/com.github.jitpack/gradle-modular
 Get download stats for individual versions
 
 **GET** `/downloads/:groupId/:artifactId/:tag`
+
