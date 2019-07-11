@@ -4,7 +4,7 @@ In order to publish your library on JitPack you just need a working build file i
 
 JitPack currently can build **Gradle**, **Maven**, **Sbt** and **Leiningen** projects. Let us know if you want to use it with other build tools.
 
-If the project has a `build.gradle` file then it will be built using Gradle otherwise JitPack will look for a `pom.xml`, `build.sbt` or `project.clj` file. The `build.gradle`file can also be located in a subfolder.
+If the project has a `build.gradle` file then it will be built using Gradle otherwise JitPack will look for a `pom.xml`, `build.sbt` or `project.clj` file. The `build.gradle` file can also be located in a subfolder.
 
 ## Gradle projects
 
