@@ -8,7 +8,7 @@ If the project has a `build.gradle` file then it will be built using Gradle othe
 
 ## Gradle projects
 
-Projects using Gradle need to have either the [`maven`](http://gradle.org/docs/current/userguide/maven_plugin.html) or [`maven-publishing`](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this to your build file:
+Projects using Gradle need to have either the [`maven`](http://gradle.org/docs/current/userguide/maven_plugin.html) or [`maven-publish`](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this to your build file:
 
 ```gradle
 apply plugin: 'maven'
@@ -22,7 +22,7 @@ then JitPack will run:
 ./gradlew install
 ```
 
-to install the jar and pom file in it's local maven repository. With `maven-publishing` plugin it will run
+to install the jar and pom file in it's local maven repository. With `maven-publish` plugin it will run
 ```sh
 ./gradlew build publishToMavenLocal
 ```
