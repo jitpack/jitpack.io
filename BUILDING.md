@@ -250,7 +250,7 @@ The easiest way is to open a GitHub issues or send a Support ticket from https:/
 
 You can also build snapshots on each commit if you add GitHub or Bitbucket Webhooks. 
 
-On GitGub go to repository Settings -> Webhooks & Services -> Add webhook.
+On GitHub go to repository Settings -> Webhooks & Services -> Add webhook.
 
 Webhook URL:
 `https://jitpack.io/api/webhooks`
