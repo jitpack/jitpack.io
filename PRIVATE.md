@@ -218,3 +218,7 @@ If you'd like to use a different groupId (as in com.yourcompany.USER/REPO) then 
 
  - git.yourcompany.com points to https://gitlab.yourcompany.com
  
+## SSH Key Authentication
+
+JitPack also supports SSH key based authentication or Deploy Keys. 
+You can generate a key on your user page and then add it to the Git repository. 
