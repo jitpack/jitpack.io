@@ -48,7 +48,7 @@ Gradle example:
 
 **Snapshots**
 
-Snapshot versions are useful during development. A snapshot is a version that has not been released. The difference between a real version and a snapshot is that snapshot might still get updates. Snapshot versions are useful during development process and JitPack provides two ways to get them. You can specify a version for your dependency as:
+A snapshot is a version that has not been released. The difference between a real version and a snapshot is that snapshot might still get updates. Snapshot versions are useful during development process and JitPack provides two ways to get them. You can specify a version for your dependency as:
 
  - commit hash
 
@@ -69,6 +69,7 @@ configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
 ```
+Building a new snapshot may take some time so it might be necessary to increase Gradle timeouts ([FAQ](FAQ.md)).
 
 Or you could also run Gradle from the command line with the `--refresh-dependencies` flag. See the [Gradle documentation](https://docs.gradle.org/2.5/userguide/dependency_management.html#changing-module-cache-control) for more information on how to configure caching for *changing* dependencies.
 
