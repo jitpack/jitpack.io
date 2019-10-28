@@ -25,7 +25,7 @@ If you are using Gradle to get a GitHub project into your build, you will need t
 
  - *Group:* com.github.Username
  - *Artifact:* Repository Name
- - *Version:* Release tag, commit hash or `-SNAPSHOT`
+ - *Version:* Release tag, commit hash or `master-SNAPSHOT`
 
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
@@ -81,6 +81,15 @@ If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-r
 
 *Tip:* You can also automate GitHub releases with [Gradle release & version management plugin](https://github.com/allegro/axion-release-plugin)
 
+**Pull Requests**
+
+In addition to snapshot builds JitPack supports building Pull Requests. Simply use `PR<NR>-SNAPSHOT` as the version.
+
+For example:
+```gradle
+    // dependency for Pull Request 4
+    implementation 'com.github.jitpack:gradle-simple:PR4-SNAPSHOT'
+```
 
 Publishing on JitPack
 ======
