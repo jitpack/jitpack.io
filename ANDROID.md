@@ -64,7 +64,7 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.jitpack:android-example:1.0.1'
+    implementation 'com.github.jitpack:android-example:1.0.1'
 }
 ```
 
@@ -76,7 +76,7 @@ If you add a sample app to the same repo then your app needs to depend on the li
 
 ```gradle
 dependencies {
-    compile project(':library')
+    implementation project(':library')
 }
 ```
 
