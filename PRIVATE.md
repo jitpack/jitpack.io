@@ -129,6 +129,18 @@ dependencies {
 }
 ```
 
+## Azure
+
+JitPack can build private git repositories from Azure DevOps (https://dev.azure.com).
+
+To configure:
+
+1. Sign In on https://jitpack.io
+2. Click on your username (https://jitpack.io/w/user)
+3. In 'Git server' section enter https://dev.azure.com and your Personal Access Token. The token should have Read&Write access to Code.
+4. On jitpack.io Look Up your project using: com.azure.{Project}/{Repo}
+
+
 ## Private and transitive dependencies
 
 Your private GitHub projects can have dependencies on other GitHub projects. JitPack supports resolution of these dependencies seamlessly and there's no extra configuration required. The token you use to build the first project will also be used to build it's dependencies.
