@@ -131,14 +131,14 @@ dependencies {
 
 ## Azure
 
-JitPack can build private git repositories from Azure DevOps (https://dev.azure.com).
+JitPack can build private and public git repositories from Azure DevOps (https://dev.azure.com).
+You can Look Up your project on jitpack.io using: com.azure.{Project}/{Repo}. For example: com.azure.jitpack/gradle-simple
 
-To configure:
+To configure private repositories:
 
 1. Sign In on https://jitpack.io
 2. Click on your username (https://jitpack.io/w/user)
-3. In 'Git server' section enter https://dev.azure.com and your Personal Access Token. The token should have Read&Write access to Code.
-4. On jitpack.io Look Up your project using: com.azure.{Project}/{Repo}
+3. In 'Git server' section enter https://dev.azure.com and then your Personal Access Token. The token should have Read&Write access to Code.
 
 
 ## Private and transitive dependencies
