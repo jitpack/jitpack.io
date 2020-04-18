@@ -97,7 +97,7 @@ Examples:
  
  N.B. in a Maven multi-module build, the top level is always a pom (not a jar), but it *can* still be used to aggregate javadocs, as long as they are published as a jar file when the project is built. You can configure the javadoc plugin at the top level like this, and the javadocs will be published with an artifact id the same as the top level pom:
  
- ```xml
+```xml
 <build>
     <pluginManagement>
         <plugins>
