@@ -142,7 +142,7 @@ Add dependency information in your README. Tell the world where to get your libr
 - [Private repositories](https://jitpack.io/private)
 - Dynamic versions. You can use Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built. JitPack periodically checks for new releases and builds them ahead-of-time.
 - Build by tag, commit id, or `anyBranch-SNAPSHOT`.
-- You can also use your own domain name for groupI
+- You can also use your own domain name for group
 
 ## Immutable artifacts #
 
@@ -161,6 +161,8 @@ JitPack also works with other Git hosting providers. The only difference is the 
  - GitLab: *com.gitlab*.Username:Repo:Tag
  
  - Gitee: *com.gitee*.Username:Repo:Tag
+ 
+ - Azure: *com.azure*.Project:Repo:Tag
 
 To see an example, head to https://jitpack.io and 'Look Up' a Git repository by url.
 
