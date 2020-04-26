@@ -142,8 +142,15 @@ Add dependency information in your README. Tell the world where to get your libr
 - [Private repositories](https://jitpack.io/private)
 - Dynamic versions. You can use Gradle's dynamic version '1.+' and Maven's version ranges for releases. They resolve to releases that have already been built. JitPack periodically checks for new releases and builds them ahead-of-time.
 - Build by tag, commit id, or `anyBranch-SNAPSHOT`.
-- You can also use your own domain name for groupId
-- Immutable artifacts. Builds cannot be changed after 7 days
+- You can also use your own domain name for groupI
+
+## Immutable artifacts #
+
+Public repository artifacts on JitPack are immutable after 7 days of publishing.
+Withing the first 7 days they can be re-built to fix any release issues. Even then we recommend creating a patch release instead.
+
+JitPack will also keep hosting artifacts after the originating git repository is deleted.
+To delete a build you need to have git push permissions to your git repository.
 
 ## Other Git hosts ##
 
