@@ -232,5 +232,7 @@ If you'd like to use a different groupId (as in com.yourcompany.USER/REPO) then 
  
 ## SSH Key Authentication
 
-JitPack also supports SSH key based authentication or Deploy Keys. 
-You can generate a key on your user page and then add it to the Git repository. 
+In addition to HTTPS JitPack also supports SSH key based authentication or Deploy Keys. 
+You can generate keys on your user page and then add the public key to your Git repository.
+
+If you would like to have admin permissions for the repository on JitPack then the deploy key needs to have push permissions.
