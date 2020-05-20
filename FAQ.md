@@ -42,8 +42,13 @@ The output should contain a line "HTTP Could not get" with the full URL and HTTP
 
 Possible reasons:
 1. 404 - File not found. Build failed, tag does not exist or there is no such file in build artifacts.
-2. 401 - Unauthorized. No token was supplied or the token doesn't have access to the Git repository.
-3. 403 - Forbidden. Issue with subscription.
+2. 401 - Unauthorized. No token was supplied.
+3. 403 - Forbidden. The token doesn't have access to the Git repository.
+
+To re-authorize JitPack for private repositories:
+1. Sign out of JitPack
+2. Revoke JitPack on https://github.com/settings/applications
+3. Authorize on https://jitpack.io/auth
 
 If the error is unclear, feel free to contact Support.
 
