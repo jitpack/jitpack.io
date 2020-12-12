@@ -7,45 +7,22 @@ Builds are run with Java 8 by default but can be configured using a jitpack.yml 
 
 ## Gradle
 
-To enable building on JitPack you need to add the [android-maven](https://github.com/dcendents/android-maven-gradle-plugin) plugin. 
-
-If using Gradle *4.6* or later:
-
-1) In your root build.gradle: 
-```gradle
-buildscript { 
-  dependencies {
-    classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1' // Add this line
-``` 
-
-2) In your library/build.gradle add:  
-
-```gradle
- apply plugin: 'com.github.dcendents.android-maven'  
- 
- group='com.github.YourUsername'
-```
-
-3) Create a GitHub release or add a git tag.
+To enable building on JitPack you need to configure the `maven-publish` Gradle plugin to publish your library as explained in [the Android documentation](https://developer.android.com/studio/build/maven-publish-plugin).
 
 ## Checks
 
-Check that you have the [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) in your Git repository. If you don't then create it using the command `gradle wrapper` and commit it. Also check that the generated gradle-wrapper.jar is not ignored with .gitignore rules.
+Check that your library can be installed to mavenLocal (`$HOME/.m2/repository`):
 
-**Test**. After these changes go to the root of your project and run the Gradle wrapper with:
+```
+./gradlew publishToMavenLocal
 
-    ./gradlew install
-    
-It will install your library in your local maven repository ($HOME/.m2/repository). 
-If install works and you have added a GitHub release it should work jitpack.io
+// or if you named your publication "release"
+./gradlew publishReleasePublicationToMavenLocal
+```
 
-**Important:** Please check [here](https://github.com/dcendents/android-maven-gradle-plugin#note-on-releases) which version of android-maven plugin is required for your Gradle version. Your Gradle version is specified in gradle/wrapper/gradle-wrapper.properties file.    
+## Create your release
 
-## Examples
-
-- [Android-Example](https://github.com/jitpack/android-example) 
-
-- [Multiple build variants](https://github.com/jitpack-io/multi-flavor-lib-demo)
+If everything wen well in the previous step, your library is ready to be released! Create a GitHub release or add a git tag and you're done!
 
 ## Installing
 
@@ -82,13 +59,7 @@ dependencies {
 
 where 'library' is the name of your library module.
 
-## Jar file
+## Examples
 
-By default the android-maven plugin generates an 'aar' file from your library. If you want to have a 'jar' instead take a look at the [Example](https://github.com/jitpack/android-example) project's library/build.gradle.
+- [Library example](https://github.com/martinbonnin/jitpack-android-sample) 
 
-# Tutorials
-
- - [How to create an Android Gradle library (with video)](https://medium.com/@levibostian/how-to-create-an-android-gradle-library-cf2792b39be#.nkeke59zp) by Levi Bostian
- - [Publish an Android Library](https://medium.com/@ome450901/publish-an-android-library-by-jitpack-a0342684cbd0#.44sbcommx)
- - [Publishing Java / Android / Kotlin libraries](https://medium.com/@erluxman/publishing-java-android-kotlin-libraries-on-jitpack-b33d0d26dc8a)
- 
