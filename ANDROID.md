@@ -22,7 +22,7 @@ Check that your library can be installed to mavenLocal (`$HOME/.m2/repository`):
 
 ## Create your release
 
-If everything wen well in the previous step, your library is ready to be released! Create a GitHub release or add a git tag and you're done!
+If everything went well in the previous step, your library is ready to be released! Create a GitHub release or add a git tag and you're done!
 
 ## Installing
 
