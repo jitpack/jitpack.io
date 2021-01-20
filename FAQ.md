@@ -8,7 +8,7 @@ In case you need to redo a release the best option is to create a new version on
 
 **How can I get the latest snapshot of a repository?**
 
-In your build file set the version of your dependency to `anyBranch-SNAPSHOT`. This is usefull during development but we don't recommend to be used in production.
+In your build file set the version of your dependency to `anyBranch-SNAPSHOT`. This is useful during development but we don't recommend to be used in production.
 
 You can also customize how often you want Gradle to check for new snapshots - see [the documentation](https://docs.gradle.org/1.8-rc-1/userguide/dependency_management.html#sec:controlling_caching). 
 
@@ -35,7 +35,7 @@ Example: https://jitpack.io/#io.jitpack/gradle-simple
 **Why am I getting `failed to resolve` error in Gradle?**
 
 There could could be a number of reasons so we need to find the cause of this error.
-The first thing to check is if the build was successfull by doing a Look Up on https://jitpack.io. 
+The first thing to check is if the build was successful by doing a Look Up on https://jitpack.io. 
 
 To get more details run Gradle from command line with `--info --refresh-dependencies` flags.
 The output should contain a line "HTTP Could not get" with the full URL and HTTP Status Code.
@@ -92,13 +92,13 @@ If you'd like to report a security issue please contact security@jitpack.io
 
 **Can I rebuild my project?**
 
-If your first build wasn't successfull you can rebuild it. If you Sign In on JitPack.io then you'll be able to remove the old build and re-requesting it will trigger a new build. 
+If your first build wasn't successful you can rebuild it. If you Sign In on JitPack.io then you'll be able to remove the old build and re-requesting it will trigger a new build. 
 
 See also https://jitpack.io/docs/BUILDING/#rebuilding
 
 **Can version ranges be used with JitPack?**
 
-You can use version ranges and Gradle's dynamic versions for releases. Currenly they only resolve to releases that have been built.
+You can use version ranges and Gradle's dynamic versions for releases. Currently they only resolve to releases that have been built.
 `compile 'com.github.User:Repo:1.+'`
 
 **How long can builds take?**
