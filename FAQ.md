@@ -133,6 +133,11 @@ There are a couple of ways of dealing with this:
   
 With option 2. the third party artifact becomes available as a Gradle/Maven dependency on JitPack.
 
+**Does JitPack provide artifact checksums and signing**
+
+JitPack creates sha and md5 checksums for all artifacts.
+Artifact signing is not yet available however we are planning to add it as well.
+
 **How do I resolve `Read timed out` error in Gradle?**
 
 Since version 4.3 Gradle has reduced http timeouts which can cause downloads to time out when JitPack waits for a build to finish.
