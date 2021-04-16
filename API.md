@@ -54,7 +54,7 @@ Get the latest build by tag. Tags are compared according to semantic versioning.
 
 **GET** `/builds/:groupId/:artifactId/latest`
 
-Get the latest build that was successfull.
+Get the latest build that was successful.
 
 **GET** `/builds/:groupId/:artifactId/latestOk`
 
