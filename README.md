@@ -15,17 +15,29 @@ Building with JitPack
 
 If you are using Gradle to get a GitHub project into your build, you will need to:
 
-**Step 1.** Add the JitPack maven repository to the list of repositories:
+**Step 1.** Add the JitPack maven repository with proper note and [filtering](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:repository-content-filtering) to the list of repositories:
 
 ```gradle
-    url "https://jitpack.io"
+    maven { url "https://jitpack.io" 
+      // for https://github.com/username/repositoryname
+      content { includeGroup "com.github.username" }
+    }
 ```
+*Note*: when using multiple repositories in `build.gradle` it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
 
 **Step 2.**  Add the dependency information:
 
  - *Group:* com.github.Username
  - *Artifact:* Repository Name
  - *Version:* Release tag, commit hash or `master-SNAPSHOT`
+
+**Step 3.**  For [security](https://blog.autsoft.hu/a-confusing-dependency/) and performance exclude the dependency search from other repositories.
+
+```gradle
+                content {
+                    excludeGroupByRegex "com\\.github.username.*"
+                }
+```
 
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
@@ -35,16 +47,21 @@ Gradle example:
 ```gradle
     allprojects {
         repositories {
-            jcenter()
-            maven { url "https://jitpack.io" }
+            jcenter {
+                content {
+                    excludeGroupByRegex "com\\.github.username.*"
+                }
+            }
+            maven { url "https://jitpack.io" 
+                // for https://github.com/username/repositoryname
+                content { includeGroup "com.github.username" }
+            }
         }
-   }
-   dependencies {
+    }
+    dependencies {
         implementation 'com.github.User:Repo:Version'
-   }
+    }
 ```
-
-*Note*: when using multiple repositories in build.gradle it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
 
 **Snapshots**
 
