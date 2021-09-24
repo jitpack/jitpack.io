@@ -215,7 +215,20 @@ If you are using a custom domain or BitBucket, use:
 (https://jitpack.io/#org.bitbucket.User/Repo)
 ```
 
-Or, if you prefer the flat-squared style:
+For download statistics badges you can use:
+- Weekly:
+    ```
+    ![Weekly download statistics](https://jitpack.io/v/USER/REPO/week.svg)
+    ```
+    ![Weekly download statistics](https://jitpack.io/v/jitpack/maven-simple/week.svg)
+- Monthly:
+    ```
+    ![Monthly download statistics](https://jitpack.io/v/USER/REPO/month.svg)
+    ```
+    ![Monthly download statistics](https://jitpack.io/v/jitpack/maven-simple/month.svg)
+
+
+If you prefer the flat-squared badge style you can append `?style=flat-square` to the URL:
 
 ```
 https://jitpack.io/v/User/Repo.svg?style=flat-square
