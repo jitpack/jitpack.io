@@ -18,7 +18,7 @@ If you are using Gradle to get a GitHub project into your build, you will need t
 **Step 1.** Add the JitPack maven repository to the list of repositories:
 
 ```gradle
-    url "https://jitpack.io"
+url "https://jitpack.io"
 ```
 
 **Step 2.**  Add the dependency information:
@@ -33,15 +33,15 @@ To see an example head to [jitpack.io](https://jitpack.io) and 'Look Up' a GitHu
 
 Gradle example:
 ```gradle
-    allprojects {
-        repositories {
-            jcenter()
-            maven { url "https://jitpack.io" }
-        }
-   }
-   dependencies {
-        implementation 'com.github.User:Repo:Version'
-   }
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencies {
+    implementation 'com.github.User:Repo:Version'
+}
 ```
 
 *Note*: when using multiple repositories in build.gradle it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
@@ -56,8 +56,8 @@ A snapshot is a version that has not been released. The difference between a rea
 
 For example:
 ```gradle
-    // dependency on the latest commit in the master branch
-    implementation 'com.github.jitpack:gradle-simple:master-SNAPSHOT'
+// dependency on the latest commit in the master branch
+implementation 'com.github.jitpack:gradle-simple:master-SNAPSHOT'
 ```
 
 Adding `-SNAPSHOT` will build the latest commit on the master branch.
@@ -87,8 +87,8 @@ In addition to snapshot builds JitPack supports building Pull Requests. Simply u
 
 For example:
 ```gradle
-    // dependency for Pull Request 4
-    implementation 'com.github.jitpack:gradle-simple:PR4-SNAPSHOT'
+// dependency for Pull Request 4
+implementation 'com.github.jitpack:gradle-simple:PR4-SNAPSHOT'
 ```
 
 Publishing on JitPack
@@ -107,13 +107,13 @@ As long as there's a build file in your repository and it can install your libra
 Add dependency information in your README. Tell the world where to get your library:
 
 ```gradle
-   repositories {
-        jcenter()
-        maven { url "https://jitpack.io" }
-   }
-   dependencies {
-         implementation 'com.github.jitpack:gradle-simple:1.0'
-   }
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+}
+dependencies {
+    implementation 'com.github.jitpack:gradle-simple:1.0'
+}
 ```  
 
 - Add sources jar. Creating the sources jar makes it easier for others to use your code and contribute.
