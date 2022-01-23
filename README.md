@@ -35,7 +35,7 @@ Gradle example:
 ```gradle
     allprojects {
         repositories {
-            jcenter()
+            mavenCentral()
             maven { url "https://jitpack.io" }
         }
    }
