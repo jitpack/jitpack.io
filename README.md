@@ -108,7 +108,7 @@ Add dependency information in your README. Tell the world where to get your libr
 
 ```gradle
    repositories {
-        jcenter()
+        mavenCentral()
         maven { url "https://jitpack.io" }
    }
    dependencies {
