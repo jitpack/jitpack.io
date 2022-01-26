@@ -61,5 +61,5 @@ where 'library' is the name of your library module.
 
 ## Examples
 
-- [Library example](https://github.com/jitpack/android-sample) 
+- [Library example](https://github.com/jitpack/android-example) 
 
