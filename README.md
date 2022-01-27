@@ -15,11 +15,12 @@ Building with JitPack
 
 If you are using Gradle to get a GitHub project into your build, you will need to:
 
-**Step 1.** Add the JitPack maven repository to the list of repositories:
+**Step 1.** Add the JitPack maven repository with proper note and [filtering](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:repository-content-filtering) to the list of repositories:
 
 ```gradle
-    url "https://jitpack.io"
+    maven { url "https://jitpack.io"  }
 ```
+*Note*: when using multiple repositories in `build.gradle` it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
 
 **Step 2.**  Add the dependency information:
 
@@ -38,13 +39,25 @@ Gradle example:
             mavenCentral()
             maven { url "https://jitpack.io" }
         }
-   }
-   dependencies {
+    }
+    dependencies {
         implementation 'com.github.User:Repo:Version'
-   }
+    }
 ```
 
-*Note*: when using multiple repositories in build.gradle it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
+*Note*  For [security](https://blog.autsoft.hu/a-confusing-dependency/) and performance reasons it is recommended to exclude the dependency search from other repositories.
+
+```gradle
+      maven { 
+        url "https://jitpack.io" 
+        content { includeGroup "com.github.username" }
+      }
+      maven {
+        url "https://other repository"
+        content {
+          excludeGroupByRegex "com\\.github.username.*"
+      }
+```
 
 **Snapshots**
 
