@@ -18,10 +18,7 @@ If you are using Gradle to get a GitHub project into your build, you will need t
 **Step 1.** Add the JitPack maven repository with proper note and [filtering](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:repository-content-filtering) to the list of repositories:
 
 ```gradle
-    maven { url "https://jitpack.io" 
-      // for https://github.com/username/repositoryname
-      content { includeGroup "com.github.username" }
-    }
+    maven { url "https://jitpack.io"  }
 ```
 *Note*: when using multiple repositories in `build.gradle` it is recommended to add JitPack *at the end*. Gradle will go through all repositories in order until it finds a dependency.
 
@@ -31,14 +28,6 @@ If you are using Gradle to get a GitHub project into your build, you will need t
  - *Artifact:* Repository Name
  - *Version:* Release tag, commit hash or `master-SNAPSHOT`
 
-**Step 3.**  For [security](https://blog.autsoft.hu/a-confusing-dependency/) and performance exclude the dependency search from other repositories.
-
-```gradle
-                content {
-                    excludeGroupByRegex "com\\.github.username.*"
-                }
-```
-
 **That's it!** The first time you request a project JitPack checks out the code, builds it and sends the Jar files back to you.
 
 To see an example head to [jitpack.io](https://jitpack.io) and 'Look Up' a GitHub repository by url.
@@ -47,20 +36,27 @@ Gradle example:
 ```gradle
     allprojects {
         repositories {
-            jcenter {
-                content {
-                    excludeGroupByRegex "com\\.github.username.*"
-                }
-            }
-            maven { url "https://jitpack.io" 
-                // for https://github.com/username/repositoryname
-                content { includeGroup "com.github.username" }
-            }
+            mavenCentral()
+            maven { url "https://jitpack.io" }
         }
     }
     dependencies {
         implementation 'com.github.User:Repo:Version'
     }
+```
+
+*Note*  For [security](https://blog.autsoft.hu/a-confusing-dependency/) and performance reasons it is recommended to exclude the dependency search from other repositories.
+
+```gradle
+      maven { 
+        url "https://jitpack.io" 
+        content { includeGroup "com.github.username" }
+      }
+      maven {
+        url "https://other repository"
+        content {
+          excludeGroupByRegex "com\\.github.username.*"
+      }
 ```
 
 **Snapshots**
@@ -125,7 +121,7 @@ Add dependency information in your README. Tell the world where to get your libr
 
 ```gradle
    repositories {
-        jcenter()
+        mavenCentral()
         maven { url "https://jitpack.io" }
    }
    dependencies {

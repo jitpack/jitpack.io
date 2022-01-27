@@ -31,7 +31,7 @@ Users of your library will need add the jitpack.io repository:
 ```gradle
 allprojects {
  repositories {
-    jcenter()
+    mavenCentral()
     maven { url "https://jitpack.io" }
  }
 }
@@ -61,5 +61,5 @@ where 'library' is the name of your library module.
 
 ## Examples
 
-- [Library example](https://github.com/jitpack/android-sample) 
+- [Library example](https://github.com/jitpack/android-example) 
 
