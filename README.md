@@ -15,7 +15,7 @@ Building with JitPack
 
 If you are using Gradle to get a GitHub project into your build, you will need to:
 
-**Step 1.** Add the JitPack maven repository with proper note and [filtering](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:repository-content-filtering) to the list of repositories:
+**Step 1.** Add the JitPack maven repository 
 
 ```gradle
     maven { url "https://jitpack.io"  }
@@ -45,7 +45,7 @@ Gradle example:
     }
 ```
 
-*Note*  For [security](https://blog.autsoft.hu/a-confusing-dependency/) and performance reasons it is recommended to exclude the dependency search from other repositories.
+**Note:**  For [security](https://blog.autsoft.hu/a-confusing-dependency/) and performance reasons it is recommended to exclude the dependency search from other repositories using [filtering](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:repository-content-filtering).
 
 ```gradle
       maven { 
@@ -54,8 +54,7 @@ Gradle example:
       }
       maven {
         url "https://other repository"
-        content {
-          excludeGroupByRegex "com\\.github.username.*"
+        content { excludeGroupByRegex "com\\.github.username.*" }
       }
 ```
 
