@@ -1,6 +1,6 @@
 # Publish an Android library 
 
-In order to publish your Android library on JitPack you just need a working build file in your Git repository.
+To publish your Android library on JitPack you just need a working build file in your Git repository.
 
 Android SDK is available in the build environment and ANDROID_HOME variable is already set when the build starts.
 Builds are run with Java 8 by default but can be configured using a jitpack.yml file.
@@ -22,11 +22,11 @@ Check that your library can be installed to mavenLocal (`$HOME/.m2/repository`):
 
 ## Create your release
 
-If everything wen well in the previous step, your library is ready to be released! Create a GitHub release or add a git tag and you're done!
+If everything went well in the previous step, your library is ready to be released! Create a GitHub release or add a git tag and you're done!
 
 ## Installing
 
-Users of your library will need add the jitpack.io repository:
+Users of your library will need to add the jitpack.io repository:
 
 ```gradle
 allprojects {
