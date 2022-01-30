@@ -88,13 +88,13 @@ configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
 ```
-Building a new snapshot may take some time so it might be necessary to increase Gradle timeouts ([FAQ](FAQ.md)).
+Building a new snapshot may take some time so it might be necessary to increase Gradle timeouts ([FAQ](/faq)).
 
 Or you could also run Gradle from the command line with the `--refresh-dependencies` flag. See the [Gradle documentation](https://docs.gradle.org/2.5/userguide/dependency_management.html#changing-module-cache-control) for more information on how to configure caching for *changing* dependencies.
 
 *Note* If using Android Studio, don't forget to press File->Synchronize after updating to a newer snapshot.
 
-Also see the [Guide to building](BUILDING.md) for more details and instructions on building multi-module projects.
+Also see the [Guide to building](/building) for more details and instructions on building multi-module projects.
 
 If the project doesn't have any [GitHub Releases](https://github.com/blog/1547-release-your-software), you can get the latest snapshot build. In this case, use the short commit id as the version. You can also place tags on other branches and then build using those tags.
 
@@ -117,7 +117,7 @@ Publishing your library on JitPack is very simple:
 
 - Create a [GitHub Release](https://github.com/blog/1547-release-your-software)  
 
-As long as there's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack. See the [Guide to building](BUILDING.md) on how to publish JVM libraries and [Guide to Android](ANDROID.md) on how to publish Android libraries.
+As long as there's a build file in your repository and it can install your library in the local Maven repository, it is sufficient for JitPack. See the [Guide to building](/building) on how to publish JVM libraries and [Guide to Android](ANDROID.md) on how to publish Android libraries.
 
 *Tip:* You can try out your code before a release by using the commit hash as the version.
 
@@ -258,4 +258,4 @@ You can enable the CI from project settings or simply sign-in on [jitci.com](htt
 FAQ
 ======
 
-See the [FAQ page](FAQ.md)
+See the [FAQ page](/faq)

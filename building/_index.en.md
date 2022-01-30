@@ -44,7 +44,7 @@ Note that if your project isn't using a Gradle wrapper JitPack will build it wit
 
 ## Android projects
 
-See the [Guide to publishing Android libraries](ANDROID.md) with Gradle
+See the [Guide to publishing Android libraries](/android) with Gradle
 
 ## Maven projects
 
@@ -241,7 +241,7 @@ before_install:
 
 If there is an issue with a build you will see a link to the log in the Status column. 
 
-   ![Build log](img/delete.png)
+   ![Build log](/img/delete.png)
 
 You can also inspect the build log using the URL:
 
