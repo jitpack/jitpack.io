@@ -1,3 +1,10 @@
+---
+title: Building
+weight: 5
+pre: "<b>2. </b>"
+chapter: true
+---
+
 # Guide to publishing libraries
 
 In order to publish your library on JitPack you just need a working build file in your Git repository.

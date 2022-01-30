@@ -1,0 +1,6 @@
+---
+title: F.A.Q.
+weight: 25
+pre: "<b>6. </b>"
+chapter: true
+---

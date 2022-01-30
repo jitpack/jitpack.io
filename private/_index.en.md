@@ -1,3 +1,10 @@
+---
+title: Private
+weight: 15
+pre: "<b>4. </b>"
+chapter: true
+---
+
 # Private Repositories
 
 JitPack supports building and installing from private Git repositories. Build artifacts are also kept private and you can only download them if you have access to the Git repository itself. 

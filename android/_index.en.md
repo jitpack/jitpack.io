@@ -1,3 +1,10 @@
+---
+title: Android
+weight: 10
+pre: "<b>3. </b>"
+chapter: true
+---
+
 # Publish an Android library 
 
 To publish your Android library on JitPack you just need a working build file in your Git repository.

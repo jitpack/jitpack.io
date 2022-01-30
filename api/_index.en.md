@@ -1,3 +1,10 @@
+---
+title: API
+weight: 20
+pre: "<b>5. </b>"
+chapter: true
+---
+
 # API 
 
 The base url for API calls is `https://jitpack.io/api`.
