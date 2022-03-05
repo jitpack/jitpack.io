@@ -197,6 +197,8 @@ You can also generate additional tokens to access build artifacts, for example, 
 To generate a new token click 'Generate' in your repository's settings.
 If you Generate a token again then the old one will be invalidated.
 
+![Extra Tokens](/img/extra-tokens.png)
+
 ## Custom domain
 
 If your organisation's GitHub url is https://github.com/yourcompany then by default the groupId of your artifacts will be 'com.github.yourcompany'. If you want to use your own domain name as groupId, you can.
