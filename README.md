@@ -32,12 +32,13 @@ If you are using Gradle to get a GitHub project into your build, you will need t
 
 To see an example head to [jitpack.io](https://jitpack.io) and 'Look Up' a GitHub repository by url.
 
-Gradle example:
+Gradle example in **settings.gradle** file:
 ```gradle
-    allprojects {
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
         repositories {
             mavenCentral()
-            maven { url "https://jitpack.io" }
+            maven { url 'https://jitpack.io' }
         }
     }
     dependencies {
