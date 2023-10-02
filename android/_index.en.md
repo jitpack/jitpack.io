@@ -33,14 +33,16 @@ If everything went well in the previous step, your library is ready to be releas
 
 ## Installing
 
-Users of your library will need to add the jitpack.io repository:
+Users of your library will need to add the jitpack.io repository to **settings.gradle** file:
 
 ```gradle
-allprojects {
- repositories {
-    mavenCentral()
-    maven { url "https://jitpack.io" }
- }
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
