@@ -10,7 +10,7 @@ Frequently Asked Questions
 
 **Can artifacts be deleted from JitPack?**
 
-Public repository artifacts on JitPack are immutable after 7 days of publishing. You will see an indicator in the list of versions when a build becomes frozen (snowflake icon). Withing the first 7 days they can be re-built to fix any release issues. Even then we recommend creating a patch release instead.
+Public repository artifacts on JitPack are immutable after 7 days of publishing. You will see an indicator in the list of versions when a build becomes frozen (snowflake icon). Within the first 7 days they can be re-built to fix any release issues. Even then we recommend creating a patch release instead.
 
 JitPack will also keep hosting artifacts after the originating git repository is deleted. To delete a build you need to have git push permissions to your git repository.
 
