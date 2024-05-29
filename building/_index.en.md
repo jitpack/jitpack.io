@@ -233,8 +233,8 @@ jdk:
 If your project requires a specific Java version then you can use [SDKMAN](https://sdkman.io) in `jitpack.yml`:
 ```yml
 before_install:
-   - sdk install java 11.0.10-open
-   - sdk use java 11.0.10-open
+   - sdk install java 22-open
+   - sdk use java 22-open
 ```
 
 # Troubleshooting
