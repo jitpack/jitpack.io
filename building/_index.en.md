@@ -56,9 +56,13 @@ mvn install -DskipTests
 to build and publish Maven projects. 
 Your Maven group id is harvested from the top-level pom and then used to locate the installed artifacts in `~/.m2/repository`. Binary jars, source jars and javadoc can all be picked up from there via the JitPack virtual repository.
 
-If your project requires a specific Maven version then you can use the [Maven Wrapper](https://github.com/takari/maven-wrapper). In that case JitPack will run:
+### Maven Version
+
+If your project requires a specific Maven version then you can use the Maven Wrapper plugin. Modify the `jitpack.yml` file like so:
 ```sh
-./mvnw install -DskipTests
+install:
+  - mvn wrapper:wrapper -Dmaven=3.9.7
+  - ./mvnw install -DskipTests
 ```
 
 ### Example projects
