@@ -38,9 +38,9 @@ Note that if your project isn't using a Gradle wrapper JitPack will build it wit
 
 ### Example projects
 
- - Simple - https://github.com/jitpack/gradle-simple
- - Multiple modules - https://github.com/jitpack/gradle-modular
- - Project with multiple artifacts - https://github.com/jitpack/gradle-multiple-jars
+ - Simple - <https://github.com/jitpack/gradle-simple>
+ - Multiple modules - <https://github.com/jitpack/gradle-modular>
+ - Project with multiple artifacts - <https://github.com/jitpack/gradle-multiple-jars>
 
 ## Android projects
 
@@ -63,9 +63,8 @@ If your project requires a specific Maven version then you can use the [Maven Wr
 
 ### Example projects
 
- - Simple - https://github.com/jitpack/maven-simple
-
- - Multiple modules - https://github.com/jitpack/maven-modular
+ - Simple - <https://github.com/jitpack/maven-simple>
+ - Multiple modules - <https://github.com/jitpack/maven-modular>
   
 # Multi-module projects
 
@@ -98,9 +97,8 @@ If your project only has a *single* module then the dependency for that module i
 
 Examples:
 
- - Multiple Gradle modules - https://github.com/jitpack/gradle-modular
-
- - Multiple Maven modules - https://github.com/jitpack/maven-modular
+ - Multiple Gradle modules - <https://github.com/jitpack/gradle-modular>
+ - Multiple Maven modules - <https://github.com/jitpack/maven-modular>
  
  N.B. in a Maven multi-module build, the top level is always a pom (not a jar), but it *can* still be used to aggregate javadocs, as long as they are published as a jar file when the project is built. You can configure the javadoc plugin at the top level like this, and the javadocs will be published with an artifact id the same as the top level pom:
  
