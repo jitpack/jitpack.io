@@ -46,7 +46,7 @@ Gradle example in **settings.gradle** file:
     }
 ```
 
-**Note:**  For [security](https://blog.autsoft.hu/a-confusing-dependency/) and performance reasons it is recommended to exclude the dependency search from other repositories using [filtering](https://docs.gradle.org/current/userguide/declaring_repositories.html#sec:repository-content-filtering).
+**Note:**  For [security](https://zsmb.co/a-confusing-dependency/) and performance reasons it is recommended to exclude the dependency search from other repositories using [filtering](https://docs.gradle.org/current/userguide/declaring_repositories_adv.html#sec:repository-content-filtering).
 
 ```gradle
       maven { 
