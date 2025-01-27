@@ -1,7 +1,7 @@
 ---
 name: Build issue
 about: 'Report failed builds '
-
+labels: build
 ---
 
 Please provide:
