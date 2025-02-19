@@ -14,7 +14,33 @@ Builds are run with Java 8 by default but can be configured using a jitpack.yml 
 
 ## Gradle
 
-To enable building on JitPack you need to configure the `maven-publish` Gradle plugin to publish your library as explained in [the Android documentation](https://developer.android.com/studio/build/maven-publish-plugin).
+To build and publish your library on JitPack you need the `maven-publish` plugin as explained in [the Android documentation](https://developer.android.com/studio/build/maven-publish-plugin).
+
+1. Add the plugin:
+
+```gradle
+plugins {
+    id 'maven-publish'
+}
+```
+
+2. Configure publishing
+
+```gradle
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'io.jitpack'
+            artifactId = 'library'
+            version = '1.0'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
+}
+```
 
 ## Checks
 
