@@ -82,13 +82,13 @@ Add the token to project.clj as the username:
 
 ## Bitbucket
 
-To use JitPack with Bitbucket private repositories you need to create an [App Password](https://blog.bitbucket.org/2016/06/06/app-passwords-bitbucket-cloud/). The minimum scope that the password requires is **Repositories: read**. If you'd like to use Artifact Sharing then the required scope is **Repositories: write**.
+To use JitPack with Bitbucket private repositories you need to create an [API Token](https://support.atlassian.com/bitbucket-cloud/docs/create-an-api-token/). The minimum scope that the token requires is **read:repository:bitbucket**. If you'd like to use Artifact Sharing then the required scope is **write:repository:bitbucket**.
 
 In order to Look Up and manage Bitbucket repositories you should add the App Password to your JitPack account:
 
 1. Sign In on https://jitpack.io
 2. Click on your username (https://jitpack.io/w/user)
-3. Enter your Bitbucket user and App Password
+3. Enter your Bitbucket email and API Token
 
 Your user page also shows your access token that you should use in your build tool (Gradle/Maven/Sbt).
 
