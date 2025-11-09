@@ -94,7 +94,7 @@ Your user page also shows your access token that you should use in your build to
 
 ## GitLab
 
-To use JitPack with GitLab.com private repositories you need to create a [Personal Access Token](https://docs.gitlab.com/ee/api/README.html#personal-access-tokens). The token requires **read_repository** and **read_api** scopes. If you'd like to be the project admin on JitPack then the token also needs **write_repository** scope.
+To use JitPack with GitLab.com private repositories you need to create a [Personal Access Token](https://docs.gitlab.com/user/profile/personal_access_tokens/). The token requires **read_repository** and **read_api** scopes. If you'd like to be the project admin on JitPack then the token also needs **write_repository** scope.
 
 In order to Look Up and manage GitLab repositories you should add the Access Token to your JitPack account:
 
