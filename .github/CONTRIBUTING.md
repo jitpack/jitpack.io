@@ -4,7 +4,7 @@ If you are submitting an issue for a failed build, please check that:
 
  1. The project is set up for automatic builds: 
     - There is a build file in the repository (build.gradle, pom.xml, etc.)
-    - The build file is properly configured https://jitpack.io/docs/BUILDING/
+    - The build file is properly configured [https://docs.jitpack.io/building/](https://docs.jitpack.io/building/)
  2. The project builds locally on your machine. For example: 
     - Gradle: `./gradlew install`
     - Maven: `mvn install`
