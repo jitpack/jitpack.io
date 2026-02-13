@@ -3,6 +3,7 @@ title: API
 weight: 20
 pre: "<b>5. </b>"
 chapter: true
+copyright: JitPack 2026
 ---
 
 # API 

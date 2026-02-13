@@ -3,6 +3,7 @@ title: About
 weight: 1
 pre: "<b>1. </b>"
 chapter: true
+copyright: JitPack 2026
 ---
 
 JitPack.io

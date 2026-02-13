@@ -3,6 +3,7 @@ title: Private
 weight: 15
 pre: "<b>4. </b>"
 chapter: true
+copyright: JitPack 2026
 ---
 
 # Private Repositories

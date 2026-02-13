@@ -3,6 +3,7 @@ title: Building
 weight: 5
 pre: "<b>2. </b>"
 chapter: true
+copyright: JitPack 2026
 ---
 
 # Guide to publishing libraries

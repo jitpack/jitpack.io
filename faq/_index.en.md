@@ -3,6 +3,7 @@ title: F.A.Q.
 weight: 25
 pre: "<b>6. </b>"
 chapter: true
+copyright: JitPack 2026
 ---
 
 Frequently Asked Questions
