@@ -13,13 +13,13 @@ You can also share your build artifacts (jar, aar) publicly while keeping the so
 
 A JitPack Subscription is tied to a specific GitHub/Bitbucket account which can be either a user or an organization. All repositories under that account can be built with JitPack and used by members of the organization.
 
-Note that your GitHub organization may need to approve JitPack in order to access private repositories ([Documentation](https://help.github.com/articles/connecting-with-third-party-applications/#third-party-applications-and-organizations)).
+Note that your GitHub organization may need to approve JitPack in order to access private repositories ([Documentation](https://docs.github.com/articles/connecting-with-third-party-applications/)).
 
 ## Set up
 
-To start using private repositories you will first need to grant JitPack access. Open [https://jitpack.io/private](https://jitpack.io/private#auth) and follow the steps:
+To start using private repositories you will first need to grant JitPack access. Open [https://jitpack.io/private](https://jitpack.io/private) and follow the steps:
 
-1. Click Authorize to get your personal authentication token. Each member of your team should to get their own token.
+1. Click Authorize to get your personal authentication token. Each member of your team should get their own token.
 
 2. Add the token to $HOME/.gradle/gradle.properties:
 
@@ -77,7 +77,7 @@ Note that the `realm` property in the credentials file is case sensitive and nee
 
 Add the token to project.clj as the username:
 ```
-:repositories [["jitpack" {:url"https://jitpack.io" :username "AUTHENTICATION_TOKEN" :password "."}]]
+:repositories [["jitpack" {:url "https://jitpack.io" :username "AUTHENTICATION_TOKEN" :password "."}]]
 ```
 
 ## Bitbucket
@@ -150,7 +150,7 @@ To configure private repositories:
 
 ## Private and transitive dependencies
 
-Your private GitHub projects can have dependencies on other GitHub projects. JitPack supports resolution of these dependencies seamlessly and there's no extra configuration required. The token you use to build the first project will also be used to build it's dependencies.
+Your private GitHub projects can have dependencies on other GitHub projects. JitPack supports resolution of these dependencies seamlessly and there's no extra configuration required. The token you use to build the first project will also be used to build its dependencies.
 
 For transitive dependencies to work in Gradle the authentication token property needs to be called `authToken` in all projects.
 
@@ -235,7 +235,7 @@ After that you'll be able to access your libraries on the main JitPack page with
 
 - com.yourcompany.gitlab.USER/REPO
 
-If you'd like to use a different groupId (as in com.yourcompany.USER/REPO) then you'll need to setup a custom domain as described above. The only difference is that instead of GitHub point the TXT record to your git server. For example, if the address of your GitLab is https://gitlab.yourcompany.com then set the TXT record the following way:
+If you'd like to use a different groupId (as in com.yourcompany.USER/REPO) then you'll need to set up a custom domain as described above. The only difference is that instead of GitHub point the TXT record to your git server. For example, if the address of your GitLab is https://gitlab.yourcompany.com then set the TXT record the following way:
 
  - git.yourcompany.com points to https://gitlab.yourcompany.com
  

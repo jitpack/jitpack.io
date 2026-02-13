@@ -15,7 +15,7 @@ If the project has a `build.gradle` file then it will be built using Gradle othe
 
 ## Gradle projects
 
-Projects using Gradle need to have either the [`maven`](http://gradle.org/docs/current/userguide/maven_plugin.html) or [`maven-publish`](https://gradle.org/docs/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this to your build file:
+Projects using Gradle need to have either the [`maven`](https://docs.gradle.org/current/userguide/maven_plugin.html) or [`maven-publish`](https://docs.gradle.org/current/userguide/publishing_maven.html) plugin enabled. For example, if you add this to your build file:
 
 ```gradle
 apply plugin: 'maven'
@@ -29,7 +29,7 @@ then JitPack will run:
 ./gradlew install
 ```
 
-to install the jar and pom file in it's local maven repository. With `maven-publish` plugin it will run
+to install the jar and pom file in its local maven repository. With `maven-publish` plugin it will run
 ```sh
 ./gradlew build publishToMavenLocal
 ```
@@ -68,7 +68,7 @@ If your project requires a specific Maven version then you can use the [Maven Wr
   
 # Multi-module projects
 
-If the project builds multiple modules JitPack publish all of them. It will also generate a module that includes all of repository's modules as dependencies. That way if you don't know which module you want you can get all of them by adding just a single dependency to your build file.
+If the project builds multiple modules JitPack publishes all of them. It will also generate a module that includes all of repository's modules as dependencies. That way if you don't know which module you want you can get all of them by adding just a single dependency to your build file.
 
 To get individual artifacts of multi-module builds use `com.github.User.Repo` as group Id and `ModuleName` as the artifact Id.
 
@@ -237,7 +237,7 @@ before_install:
 
 # Troubleshooting
 
-If there is an issue with a build you will see a link to the log in the Status column. 
+If there is an issue with a build, you will see a link to the log in the Status column. 
 
    ![Build log](/img/delete.png)
 
@@ -254,7 +254,7 @@ https://jitpack.io/com/github/User/Repo/Tag/
 ```
 
 Although we monitor builds feel free to get in touch any time you face an issue or click the Report button. 
-The easiest way is to open a GitHub issues or send a Support ticket from https://jitpack.io
+The easiest way is to open a GitHub issue or send a Support ticket from https://jitpack.io
 
 ## Building ahead of time
 

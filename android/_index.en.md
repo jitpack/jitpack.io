@@ -3,18 +3,19 @@ title: Android
 weight: 10
 pre: "<b>3. </b>"
 chapter: true
+copyright: JitPack 2026
 ---
 
 # Publish an Android library 
 
 To publish your Android library on JitPack you just need a working build file in your Git repository.
 
-Android SDK is available in the build environment and ANDROID_HOME variable is already set when the build starts.
+Android SDK is available in the build environment and the ANDROID_HOME variable is already set when the build starts.
 Builds are run with Java 8 by default but can be configured using a jitpack.yml file.
 
 ## Gradle
 
-To build and publish your library on JitPack you need the `maven-publish` plugin as explained in [the Android documentation](https://developer.android.com/studio/build/maven-publish-plugin).
+To build and publish your library on JitPack you need the `maven-publish` plugin as explained in [the Android documentation](https://developer.android.com/build/publish-library).
 
 1. Add the plugin:
 
@@ -59,7 +60,7 @@ If everything went well in the previous step, your library is ready to be releas
 
 ## Installing
 
-Users of your library will need to add the jitpack.io repository to **settings.gradle** file:
+Users of your library will need to add the jitpack.io repository to the **settings.gradle** file:
 
 ```gradle
 dependencyResolutionManagement {
@@ -80,7 +81,7 @@ dependencies {
 }
 ```
 
-Note: do not add the jitpack.io repository under `buildscript` 
+Note: do not add the jitpack.io repository under `buildscript`. 
 
 ## Adding a sample app 
 

@@ -41,11 +41,11 @@ Builds are ordered by time when they were executed.
 
 ## Single build
 
-Get a single build for a project and it's outcome.
+Get a single build for a project and its outcome.
 
 **GET** `/builds/:groupId/:artifactId/:tag`
 
-To delete a build and it's artifacts use:
+To delete a build and its artifacts use:
 
 **DELETE** `/builds/:groupId/:artifactId/:tag`
 
